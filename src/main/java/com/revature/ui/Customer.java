@@ -3,7 +3,7 @@ package com.revature.ui;
 public class Customer {
 	private String firstName;
 	private String lastName;
-	private String phoneNumber;
+	private Account account;
 	
 	public Customer() {
 		super();
@@ -31,12 +31,19 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public String getPhoneNumber() {
-		return phoneNumber;
+	public Account getAccount() {
+		return account;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+	public void setAccount(Account account) {
+		this.account = account;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", account=" + account + "]";
+	}
+	
+	
 	
 }

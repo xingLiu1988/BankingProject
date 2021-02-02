@@ -1,6 +1,6 @@
 package com.revature.ui;
 
-import java.util.Scanner;
+import com.revature.util.Sc;
 
 public class MainMenu implements Menu {
 
@@ -8,7 +8,6 @@ public class MainMenu implements Menu {
 	public void display() {
 
 		boolean isFlag = true;
-		Scanner scanner = new Scanner(System.in);
 		
 		while (isFlag) {
 			System.out.println("\n-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------\n");
@@ -20,8 +19,7 @@ public class MainMenu implements Menu {
 			System.out.print("\n                         PLEASE CHOOSE FROM <1-5>: ");
 
 			
-			String choice = scanner.nextLine();
-			System.out.println("You Entered " + choice);
+			String choice = Sc.sc.nextLine();
 			
 			switch (choice) {
 			case "1":
@@ -48,7 +46,6 @@ public class MainMenu implements Menu {
 			}
 		}
 
-		scanner.close();
 	}
 
 }

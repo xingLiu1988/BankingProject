@@ -24,10 +24,6 @@ public class Account {
 		return accountNumber;
 	}
 
-	public static void setAccountNumber(int accountNumber) {
-		Account.accountNumber = accountNumber;
-	}
-
 	public String getAccountType() {
 		return accountType;
 	}
