@@ -1,4 +1,4 @@
-package com.revature.ui;
+package com.revature.models;
 
 import java.util.Date;
 

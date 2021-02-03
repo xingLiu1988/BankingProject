@@ -2,7 +2,7 @@ package com.revature.services;
 
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerDaoImpl;
-import com.revature.ui.Customer;
+import com.revature.models.Customer;
 
 public class CustomerService {
 	public CustomerDao customerDao;
@@ -12,6 +12,7 @@ public class CustomerService {
 	}
 	
 	public void createCustomer(Customer cus) {
+		System.out.println("customer service class");
 		customerDao.createCustomer(cus);
 	}
 	

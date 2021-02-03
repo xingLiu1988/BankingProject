@@ -1,22 +1,25 @@
 package com.revature.ui;
 
+import org.apache.log4j.Logger;
 import com.revature.util.Sc;
 
 public class MainMenu implements Menu {
 
+	private static Logger log = Logger.getLogger(MainMenu.class);
+	
 	@Override
 	public void display() {
 
 		boolean isFlag = true;
 		
 		while (isFlag) {
-			System.out.println("\n-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------\n");
-			System.out.println("                         1. Log In As Customer");
-			System.out.println("                         2. Log In As Employee");
-			System.out.println("                         3. Create an Customer Account");
-			System.out.println("                         4. Create an Employee Account");
-			System.out.println("                         5. Exit");
-			System.out.print("\n                         PLEASE CHOOSE FROM <1-5>: ");
+			log.info("\n-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------\n");
+			log.info("                         1. Log In As Customer");
+			log.info("                         2. Log In As Employee");
+			log.info("                         3. Create an Customer Account");
+			log.info("                         4. Create an Employee Account");
+			log.info("                         5. Exit");
+			log.info("\n                         PLEASE CHOOSE FROM <1-5>: ");
 
 			
 			String choice = Sc.sc.nextLine();
@@ -42,7 +45,7 @@ public class MainMenu implements Menu {
 				isFlag = false;
 				break;
 			default:
-				System.out.println("You entered wrong choice, plese enter again");
+				log.info("You entered wrong choice, plese enter again");
 			}
 		}
 
