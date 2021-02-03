@@ -26,22 +26,27 @@ public class MainMenu implements Menu {
 			
 			switch (choice) {
 			case "1":
+				log.debug("customer entered 1");
 				Menu customerLoginView = new CustomerLoginView();
 				customerLoginView.display();
 				break;
 			case "2":
+				log.debug("employee entered 2");
 				Menu employeeLoginView = new EmployeeLoginView();
 				employeeLoginView.display();
 				break;
 			case "3":
+				log.debug("customer entered 3");
 				Menu createCustomerView = new CreateCustomerView();
 				createCustomerView.display();
 				break;
 			case "4":
+				log.debug("employee entered 4");
 				Menu createEmployeeView = new CreateEmployeeView();
 				createEmployeeView.display();
 				break;
 			case "5":
+				log.debug("customer entered 5 to exit");
 				isFlag = false;
 				break;
 			default:

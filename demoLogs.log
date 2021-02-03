@@ -402,3 +402,129 @@
 {INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:22:25              
 {INFO}    [com.revature.ui.MainMenu]     
                          PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:22:25              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:24:34              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-03-2021 星期三 EST 12:24:36              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-03-2021 星期三 EST 12:24:36              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-03-2021 星期三 EST 12:24:38              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-03-2021 星期三 EST 12:24:40              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-03-2021 星期三 EST 12:24:41              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:24:43              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:38:42              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-03-2021 星期三 EST 12:38:44              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-03-2021 星期三 EST 12:38:44              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-03-2021 星期三 EST 12:38:48              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-03-2021 星期三 EST 12:38:49              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-03-2021 星期三 EST 12:38:58              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:39:02              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:39:35              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-03-2021 星期三 EST 12:39:36              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-03-2021 星期三 EST 12:39:36              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-03-2021 星期三 EST 12:39:38              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-03-2021 星期三 EST 12:39:39              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-03-2021 星期三 EST 12:39:44              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:39:47              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:56:34              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-03-2021 星期三 EST 12:56:39              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-03-2021 星期三 EST 12:56:39              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-03-2021 星期三 EST 12:56:44              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-03-2021 星期三 EST 12:56:46              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-03-2021 星期三 EST 12:56:48              
+{INFO}    [com.revature.services.CustomerService]     
+User created successfully
+    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:56:49              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-03-2021 星期三 EST 12:57:35              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-03-2021 星期三 EST 12:57:35              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-03-2021 星期三 EST 12:57:36              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-03-2021 星期三 EST 12:57:37              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-03-2021 星期三 EST 12:57:38              
+{INFO}    [com.revature.services.CustomerService]     
+User created successfully
+    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-03-2021 星期三 EST 12:57:39              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-03-2021 星期三 EST 12:57:39              
