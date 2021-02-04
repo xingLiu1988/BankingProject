@@ -6,8 +6,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.log4j.xml.Log4jEntityResolver;
+
 import com.revature.models.Account;
 import com.revature.models.Customer;
+import com.revature.ui.CustomerLoginView;
 import com.revature.util.ConnectionUtil;
 
 public class CustomerDaoImpl implements CustomerDao {
@@ -189,6 +192,51 @@ public class CustomerDaoImpl implements CustomerDao {
 			e.printStackTrace();
 		}
 		return customer;
+	}
+
+	@Override
+	public boolean depositToChecking(int amountInt) {
+		int checking_id = 0;
+		int balance = 0;
+		System.out.println("进入depositToChecking dao");
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			//1. 获取checking account id
+			String sql = "SELECT account_id_checking FROM banking.customer WHERE login_id = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, CustomerLoginView.id);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				checking_id = resultSet.getInt("account_id_checking");
+				System.out.println("查找id成功");
+			}else {
+				System.out.println("没找到checking account");
+				return false;
+			}
+			
+			//3. 获取当前用户的余额
+			String sql2 = "SELECT balance FROM banking.account WHERE account_id = ?";
+			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
+			preparedStatement2.setInt(1, checking_id);
+			ResultSet resultSet2 = preparedStatement2.executeQuery();
+			if(resultSet2.next()) {
+				balance = resultSet2.getInt("balance");
+			}
+			amountInt += balance;
+			
+			//2. 更新account id 的balance
+			String sql3 = "UPDATE banking.account SET balance = ? WHERE account_id = ?";
+			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
+			preparedStatement3.setInt(1, amountInt);
+			preparedStatement3.setInt(2, checking_id);
+			preparedStatement3.executeUpdate();
+			System.out.println("更新成功");
+		} catch (SQLException e) {
+			// TODO: handle exception
+			System.out.println("SQLEXCEPTION");
+		}
+		
+		return true;
+		
 	}
 
 }

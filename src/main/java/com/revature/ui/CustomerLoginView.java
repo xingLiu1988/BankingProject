@@ -7,7 +7,7 @@ import com.revature.util.Sc;
 import com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator;
 
 public class CustomerLoginView implements Menu {
-	static int id;
+	public static int id;
 	private static Logger log = Logger.getLogger(CustomerLoginView.class);
 
 	@Override

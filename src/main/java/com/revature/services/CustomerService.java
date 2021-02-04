@@ -1,11 +1,15 @@
 package com.revature.services;
 
+import java.nio.charset.MalformedInputException;
+import java.util.InputMismatchException;
+
 import org.apache.log4j.Logger;
 
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerDaoImpl;
 import com.revature.models.Customer;
 import com.revature.ui.MainMenu;
+import com.revature.util.Sc;
 
 public class CustomerService {
 	private static Logger log = Logger.getLogger(CustomerService.class);
@@ -43,17 +47,36 @@ public class CustomerService {
 		
 		return result;
 	}
-
+	
+	//4 …Í«Î÷¸–Ó’Àªß
 	public boolean applySavingAccount(int id) {
 		int number = (int) Math.floor(Math.random()*99999999);
 		boolean result = customerDao.applySavingAccount(id, number);
 		
 		return result;
 	}
-
+	
+	//5 ≤Èø¥”‡∂Ó
 	public Customer getBalance(int id) {
 		Customer cus = customerDao.getBalance(id);
 		return cus;
+	}
+
+	//¥Ê«ÆµΩ÷ß∆±’Àªß
+	public boolean depositToChecking() {
+		log.info("\nWelcome to the deposit system");
+		log.info("Please enter integer amount you want to deposit to your checking account");
+		
+		String amount = Sc.sc.nextLine();
+		//line here can add a regEx in future to prevent invalid input
+		int amountInt = Integer.parseInt(amount);
+		if(amountInt <= 0) {
+			log.info("amount can't be 0 or less");
+			return false;
+		}else {
+			boolean result = customerDao.depositToChecking(amountInt);
+			return result;
+		}
 	}
 	
 }

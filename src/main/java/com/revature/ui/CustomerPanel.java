@@ -24,22 +24,21 @@ public class CustomerPanel implements Menu{
 		
 		while(isFlag) {
 			log.info("\n-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------\n");
-			log.info("                         1. APPLY FOR CHECKING ACCOUNT");
-			log.info("                         2. APPLY FOR SAVING ACCOUNT");
-			log.info("                         3. CHECK YOUR CHECKING ACCOUNT BALANCE");
-			log.info("                         4. CHECK YOUR SAVING ACCOUNT BALANCE");
-			log.info("                         5. DEPOSIT TO CHECKING ACCOUNT");
-			log.info("                         6. DEPOSIT TO SAVING ACCOUNT");
-			log.info("                         7. WITHDRAW FROM CHECKING ACCOUNT");
-			log.info("                         8. WITHDRAW FROM SAVING ACCOUNT");
-			log.info("                         9. TRANSFER MONEY");
-			log.info("                         0. Exit");
+			log.info("                         1. Apply For Checking Account");
+			log.info("                         2. Apply For Saving Account\n");
+			log.info("                         3. Check Account Balance\n");
+			log.info("                         4. Deposit To Checking Account");
+			log.info("                         5. Deposit To Saving Account");
+			log.info("                         6. Withdraw From Checking Account");
+			log.info("                         7. Withdraw From Saving Account");
+			log.info("                         8. Transfor Money");
+			log.info("                         9. Exit");
 			log.info("\n                         PLEASE CHOOSE FROM <0-9>: ");
 			
 			String choice = Sc.sc.nextLine();
 			
 			switch (choice) {
-			case "0":
+			case "9":
 				isFlag = false;
 				break;
 			case "1":
@@ -63,7 +62,7 @@ public class CustomerPanel implements Menu{
 				displayBalance(customer);
 				break;
 			case "4":
-				
+				customerService.depositToChecking();
 				break;
 			case "5":
 				
@@ -75,9 +74,6 @@ public class CustomerPanel implements Menu{
 				
 				break;
 			case "8":
-				
-				break;
-			case "9":
 				
 				break;
 

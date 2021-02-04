@@ -8,4 +8,5 @@ public interface CustomerDao {
 	public boolean applyCheckingAccount(int id, int number);
 	public boolean applySavingAccount(int id, int number);
 	public Customer getBalance(int id);
+	public boolean depositToChecking(int amountInt);
 }
