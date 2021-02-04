@@ -94,7 +94,44 @@ public class CustomerDaoImpl implements CustomerDao {
 			}
 			
 			// 3. 修改customer中login_id为id的account_id
-			String sql3 = "UPDATE banking.customer SET account_id = ? WHERE login_id = ?";
+			String sql3 = "UPDATE banking.customer SET account_id_checking = ? WHERE login_id = ?";
+			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
+			preparedStatement3.setInt(1, accountID);
+			preparedStatement3.setInt(2, id);
+			preparedStatement3.executeUpdate();
+			return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		// 3. 找到log in id为id的用户，并更新account id
+
+		return false;
+	}
+
+	@Override
+	public boolean applySavingAccount(int id, int number) {
+		int accountID = 0;
+		try (Connection connection = ConnectionUtil.getConnection()) {
+			// 1. 插入数据到account table
+			String sql = "INSERT INTO banking.account(account_number, account_type, balance) VALUES(?, ?, ?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, number);
+			preparedStatement.setString(2, "saving");
+			preparedStatement.setInt(3, 0);
+			preparedStatement.executeUpdate();
+			
+			// 2. 找出当前创建的account_id
+			String sql2 = "SELECT account_id FROM banking.account WHERE account_number = ?";
+			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
+			preparedStatement2.setInt(1, number);
+			ResultSet resultSet = preparedStatement2.executeQuery();
+			if(resultSet.next()) {
+				accountID = resultSet.getInt("account_id");
+			}
+			
+			// 3. 修改customer中login_id为id的account_id
+			String sql3 = "UPDATE banking.customer SET account_id_saving = ? WHERE login_id = ?";
 			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
 			preparedStatement3.setInt(1, accountID);
 			preparedStatement3.setInt(2, id);

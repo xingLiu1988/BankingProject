@@ -43,5 +43,12 @@ public class CustomerService {
 		
 		return result;
 	}
+
+	public boolean applySavingAccount(int id) {
+		int number = (int) Math.floor(Math.random()*99999999);
+		boolean result = customerDao.applySavingAccount(id, number);
+		
+		return result;
+	}
 	
 }

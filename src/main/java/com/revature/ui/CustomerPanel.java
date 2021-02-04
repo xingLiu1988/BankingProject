@@ -51,7 +51,12 @@ public class CustomerPanel implements Menu{
 				}
 				break;
 			case "2":
-				
+				boolean result2 = customerService.applySavingAccount(CustomerLoginView.id);
+				if(result2) {
+					log.info("…Í«Îsavingg’Àªß≥…π¶");
+				}else {
+					log.info("…Í«Îsaving’Àªß ß∞‹");
+				}
 				break;
 			case "3":
 				
