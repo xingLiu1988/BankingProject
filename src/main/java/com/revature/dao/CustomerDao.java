@@ -12,4 +12,7 @@ public interface CustomerDao {
 	public boolean depositToSaving(int amountInt);
 	public int getCheckingIDByLoginID();
 	public int getSavingIDByLoginID();
+	public void withdrawFromChecking(int amount, int balance);
+	public int getCheckingBalanceByAccountId();
+	public int getSavingBalanceByAccountId();
 }

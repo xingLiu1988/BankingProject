@@ -95,6 +95,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			ResultSet resultSet = preparedStatement2.executeQuery();
 			if(resultSet.next()) {
 				accountID = resultSet.getInt("account_id");
+				CustomerLoginView.checkingID = accountID;
 			}
 			
 			// 3. 修改customer中login_id为id的account_id
@@ -132,6 +133,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			ResultSet resultSet = preparedStatement2.executeQuery();
 			if(resultSet.next()) {
 				accountID = resultSet.getInt("account_id");
+				CustomerLoginView.savingID = accountID;
 			}
 			
 			// 3. 修改customer中login_id为id的account_id
@@ -315,6 +317,64 @@ public class CustomerDaoImpl implements CustomerDao {
 			e.printStackTrace();
 		}
 		return saving_id;
+	}
+
+	@Override
+	public void withdrawFromChecking(int amount, int balance) {
+
+		int result = balance - amount;
+		
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			//Update balance inside account talbe
+			String sql = "UPDATE banking.account SET balance = ? WHERE account_id = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, result);
+			preparedStatement.setInt(2, CustomerLoginView.checkingID);
+			int success = preparedStatement.executeUpdate();
+			if(success == 1) {
+				System.out.println("取款成功,取款金额：" + amount + ",剩余: " + result);
+			}else {
+				System.out.println("取款失败");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	
+	@Override
+	public int getCheckingBalanceByAccountId() {
+		int balance = 0;
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			String sql = "SELECT balance FROM banking.account WHERE account_id = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, CustomerLoginView.checkingID);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				return balance = resultSet.getInt("balance");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
+
+	@Override
+	public int getSavingBalanceByAccountId() {
+		int balance = 0;
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			String sql = "SELECT balance FROM banking.account WHERE account_id = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, CustomerLoginView.savingID);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				return balance = resultSet.getInt("balance");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
 	}
 
 }

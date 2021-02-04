@@ -96,11 +96,21 @@ public class CustomerService {
 		}
 	}
 
-	public boolean withdrawFromChecking() {
+	public void withdrawFromChecking() {
 		
+		log.info("How much you want to withdraw from your checking account?");
+		int amount = Integer.parseInt(Sc.sc.nextLine());
+		if(amount <= 0) {
+			log.info("incorrect withdraw amount, please try later");
+		}else {
+			int balance = customerDao.getCheckingBalanceByAccountId();
+			if(amount > balance) {
+				log.info("So sorry guys, you don't have enough money inside you chekcing accout, please try later");
+			}else {
+				customerDao.withdrawFromChecking(amount, balance);				
+			}
+		}
 		
-		
-		return false;
 	}
 
 	public int getCheckingIDByLoginID() {
@@ -111,6 +121,22 @@ public class CustomerService {
 	public int getSavingIDByLoginID() {
 		int savingID = customerDao.getSavingIDByLoginID();
 		return savingID;
+	}
+
+	public void withdrawFromSaving() {
+		log.info("How much you want to withdraw from your saving account?");
+		int amount = Integer.parseInt(Sc.sc.nextLine());
+		if(amount <= 0) {
+			log.info("incorrect withdraw amount, please try later");
+		}else {
+			int balance = customerDao.getSavingBalanceByAccountId();
+			if(amount > balance) {
+				log.info("So sorry guys, you don't have enough money inside you chekcing accout, please try later");
+			}else {
+				customerDao.withdrawFromChecking(amount, balance);				
+			}
+		}
+		
 	}
 	
 }

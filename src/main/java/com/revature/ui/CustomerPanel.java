@@ -68,10 +68,18 @@ public class CustomerPanel implements Menu{
 				customerService.depositToSaving();
 				break;
 			case "6":
-				customerService.withdrawFromChecking();
+				if(CustomerLoginView.checkingID == 0) {
+					log.info("You havn't create a checking account yet, please create one first");
+				}else {
+					customerService.withdrawFromChecking();
+				}
 				break;
 			case "7":
-				
+				if(CustomerLoginView.savingID == 0) {
+					log.info("You havn't create a saving account yet, please create one first");
+				}else {
+					customerService.withdrawFromSaving();
+				}
 				break;
 			case "8":
 				
