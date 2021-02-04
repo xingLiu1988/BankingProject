@@ -31,6 +31,15 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
+	
+
+	public Customer(String firstName, String lastName, Account account) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.account = account;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -59,14 +68,14 @@ public class Customer {
 		return login;
 	}
 
+	public void setLogin(Login login) {
+		this.login = login;
+	}
+
 	@Override
 	public String toString() {
 		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", account=" + account + ", login="
 				+ login + "]";
-	}
-
-	public void setLogin(Login login) {
-		this.login = login;
 	}
 	
 	

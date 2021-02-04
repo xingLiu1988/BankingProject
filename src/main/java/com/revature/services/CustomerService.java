@@ -50,5 +50,10 @@ public class CustomerService {
 		
 		return result;
 	}
+
+	public Customer getBalance(int id) {
+		Customer cus = customerDao.getBalance(id);
+		return cus;
+	}
 	
 }

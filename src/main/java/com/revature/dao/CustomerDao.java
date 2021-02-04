@@ -7,4 +7,5 @@ public interface CustomerDao {
 	public int validatePassword(String username, String password);
 	public boolean applyCheckingAccount(int id, int number);
 	public boolean applySavingAccount(int id, int number);
+	public Customer getBalance(int id);
 }

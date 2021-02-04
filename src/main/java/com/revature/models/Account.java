@@ -4,48 +4,84 @@ import java.util.Date;
 
 public class Account {
 	
-	private static int accountNumber = 100000;
-	private String accountType;
-	private double balance = 0.0;
-	private Date accountCreatedDate = new Date();
+	private int accountNumber;
+	private String accountTypeChecking;
+	private String accountTypeSaving;
+	private double balanceChecking;
+	private double balanceSaving;
+	private String dateChecking;
+	private String dateSaving;
 	
 	public Account() {
 		super();
-		accountNumber++;
 	}
 
-	public Account(String accountType) {
-		super();
-		accountNumber++;
-		this.accountType = accountType;
-	}
-
-	public static int getAccountNumber() {
+	public int getAccountNumber() {
 		return accountNumber;
 	}
 
-	public String getAccountType() {
-		return accountType;
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
+	public String getAccountTypeChecking() {
+		return accountTypeChecking;
 	}
 
-	public double getBalance() {
-		return balance;
+	public void setAccountTypeChecking(String accountTypeChecking) {
+		this.accountTypeChecking = accountTypeChecking;
 	}
 
-	public void setBalance(double balance) {
-		this.balance = balance;
+	public String getAccountTypeSaving() {
+		return accountTypeSaving;
 	}
 
-	public Date getAccountCreatedDate() {
-		return accountCreatedDate;
+	public void setAccountTypeSaving(String accountTypeSaving) {
+		this.accountTypeSaving = accountTypeSaving;
 	}
 
-	public void setAccountCreatedDate(Date accountCreatedDate) {
-		this.accountCreatedDate = accountCreatedDate;
+	public double getBalanceChecking() {
+		return balanceChecking;
 	}
+
+	public void setBalanceChecking(double balanceChecking) {
+		this.balanceChecking = balanceChecking;
+	}
+
+	public double getBalanceSaving() {
+		return balanceSaving;
+	}
+
+	public void setBalanceSaving(double balanceSaving) {
+		this.balanceSaving = balanceSaving;
+	}
+
+	public String getDateChecking() {
+		return dateChecking;
+	}
+
+	public void setDateChecking(String dateChecking) {
+		this.dateChecking = dateChecking;
+	}
+
+	public String getDateSaving() {
+		return dateSaving;
+	}
+
+	public void setDateSaving(String dateSaving) {
+		this.dateSaving = dateSaving;
+	}
+
+	@Override
+	public String toString() {
+		return "Account [accountNumber=" + accountNumber + ", accountTypeChecking=" + accountTypeChecking
+				+ ", accountTypeSaving=" + accountTypeSaving + ", balanceChecking=" + balanceChecking
+				+ ", balanceSaving=" + balanceSaving + ", dateChecking=" + dateChecking + ", dateSaving=" + dateSaving
+				+ "]";
+	}
+	
+	
+	
+	
 	
 }

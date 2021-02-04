@@ -59,7 +59,8 @@ public class CustomerPanel implements Menu{
 				}
 				break;
 			case "3":
-				
+				customer = customerService.getBalance(CustomerLoginView.id);
+				displayBalance(customer);
 				break;
 			case "4":
 				
@@ -87,5 +88,20 @@ public class CustomerPanel implements Menu{
 		
 		
 	}
+
+	private void displayBalance(Customer customer2) {
+		
+		log.info("\n--------------------------------------------------------------------------------");
+		log.info("\nCustomer Name: " + customer2.getFirstName() + " " + customer2.getLastName());
+		log.info("Account Number: " + customer2.getAccount().getAccountNumber());
+		if(customer2.getAccount().getAccountTypeChecking() != null) {
+			log.info("Checking Balance: " + customer2.getAccount().getBalanceChecking() + "\t\tCreated Date: " + customer2.getAccount().getDateChecking());
+		}
+		if(customer2.getAccount().getAccountTypeSaving() != null) {
+			log.info("Saving Balance: " + customer2.getAccount().getBalanceSaving() + "\t\tCreated Date: " + customer2.getAccount().getDateSaving());
+		}
+	}
+
+	
 
 }

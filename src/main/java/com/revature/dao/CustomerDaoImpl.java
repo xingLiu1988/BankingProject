@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.revature.models.Account;
 import com.revature.models.Customer;
 import com.revature.util.ConnectionUtil;
 
@@ -144,6 +145,50 @@ public class CustomerDaoImpl implements CustomerDao {
 		// 3. 找到log in id为id的用户，并更新account id
 
 		return false;
+	}
+
+	@Override
+	public Customer getBalance(int id) {
+		Customer customer = null;
+		Account account = null;
+		try (Connection connection = ConnectionUtil.getConnection()) {
+			// 1. 查找CHECKING资料，并保存
+			String sql = "SELECT * FROM banking.account INNER JOIN banking.customer ON customer.account_id_checking = account.account_id WHERE customer.login_id = ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, id);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			if(resultSet.next()) {
+				account = new Account();
+				account.setAccountNumber(resultSet.getInt("account_number"));
+				account.setAccountTypeChecking("checking");
+				account.setBalanceChecking(resultSet.getInt("balance"));
+				account.setDateChecking(resultSet.getString("account_created_date"));
+			}
+			// 2. 查找SAVING资料，并保存
+			String sql2 = "SELECT * FROM banking.account INNER JOIN banking.customer ON customer.account_id_saving = account.account_id WHERE customer.login_id = ?";
+			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
+			preparedStatement2.setInt(1, id);
+			ResultSet resultSet2 = preparedStatement2.executeQuery();
+			if(resultSet2.next()) {
+				account.setAccountTypeSaving("saving");
+				account.setBalanceSaving(resultSet2.getInt("balance"));
+				account.setDateSaving(resultSet2.getString("account_created_date"));
+			}
+			// 3. 查找姓名资料
+			String sql3 = "SELECT * FROM banking.customer WHERE login_id = ?";
+			PreparedStatement preparedStatement3 = connection.prepareStatement(sql2);
+			preparedStatement3.setInt(1, id);
+			ResultSet resultSet3 = preparedStatement3.executeQuery();
+			if(resultSet3.next()) {
+				String firstName = resultSet3.getString("first_name");
+				String lastName = resultSet3.getString("last_name");
+				customer = new Customer(firstName, lastName, account);
+			}
+			return customer;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return customer;
 	}
 
 }
