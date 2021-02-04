@@ -65,10 +65,10 @@ public class CustomerPanel implements Menu{
 				customerService.depositToChecking();
 				break;
 			case "5":
-				
+				customerService.depositToSaving();
 				break;
 			case "6":
-				
+				customerService.withdrawFromChecking();
 				break;
 			case "7":
 				

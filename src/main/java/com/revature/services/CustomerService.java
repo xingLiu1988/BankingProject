@@ -78,5 +78,39 @@ public class CustomerService {
 			return result;
 		}
 	}
+
+	public boolean depositToSaving() {
+		
+		log.info("\nWelcome to the deposit system");
+		log.info("Please enter integer amount you want to deposit to your saving account");
+		
+		String amount = Sc.sc.nextLine();
+		//line here can add a regEx in future to prevent invalid input
+		int amountInt = Integer.parseInt(amount);
+		if(amountInt <= 0) {
+			log.info("amount can't be 0 or less");
+			return false;
+		}else {
+			boolean result = customerDao.depositToSaving(amountInt);
+			return result;
+		}
+	}
+
+	public boolean withdrawFromChecking() {
+		
+		
+		
+		return false;
+	}
+
+	public int getCheckingIDByLoginID() {
+		int checkingID = customerDao.getCheckingIDByLoginID();
+		return checkingID;
+	}
+
+	public int getSavingIDByLoginID() {
+		int savingID = customerDao.getSavingIDByLoginID();
+		return savingID;
+	}
 	
 }

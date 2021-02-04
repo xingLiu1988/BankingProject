@@ -2297,3 +2297,845 @@ Customer Name: a5 a5    2月-04-2021 星期四 EST 14:51:47
 {INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:51:47              
 {INFO}    [com.revature.ui.CustomerPanel]     
                          PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:51:47              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:23              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 14:53:24              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 14:53:28              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 14:53:28              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 14:53:28              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 14:53:29              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 14:53:31              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:32              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 300.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 0.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:33              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 14:53:36              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 14:53:36              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:38              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 800.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 0.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:39              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 14:53:44              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 14:53:44              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:55              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 0.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:53:59              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 14:54:04              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 14:54:04              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:54:05              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 1804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 0.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 14:54:14              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 15:05:34              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 15:05:47              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 15:05:47              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 15:05:47              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 15:05:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 15:05:50              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:05:51              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 1804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 0.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:05:53              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:06:00              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your saving account    2月-04-2021 星期四 EST 15:06:00              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:06:05              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 1804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 399.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:06:11              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:06:15              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your saving account    2月-04-2021 星期四 EST 15:06:15              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:06:20              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 1804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 512.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:06:21              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:10:06              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your saving account    2月-04-2021 星期四 EST 15:10:06              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:10:08              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 1804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 845.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:10:09              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:10:25              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 15:10:25              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:10:27              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 6804.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 845.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:10:29              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 15:15:26              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 15:15:27              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 15:15:27              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 15:15:27              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 15:15:28              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 15:15:30              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:15:31              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:15:34              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 15:15:34              
+{INFO}    [com.revature.services.CustomerService]     amount can't be 0 or less    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:15:36              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-04-2021 星期四 EST 15:15:40              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-04-2021 星期四 EST 15:15:40              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:15:44              
+{INFO}    [com.revature.ui.CustomerPanel]     
+--------------------------------------------------------------------------------    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: a5 a5    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     Account Number: 29066522    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     Checking Balance: 6809.0		Created Date: 2021-02-03 22:46:15.457498    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving Balance: 845.0		Created Date: 2021-02-03 22:47:31.255857    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 15:15:46              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:17:30              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:17:33              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:17:33              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:17:33              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:17:34              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:17:37              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:17:38              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:19:35              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:19:39              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:19:39              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:19:39              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:19:40              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:19:42              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:19:43              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:26:37              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:26:40              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:26:40              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:26:40              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:26:41              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:26:43              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:26:44              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:27:56              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:27:57              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:27:57              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:27:57              
+{INFO}    [com.revature.ui.CustomerLoginView]     Your Entered Wrong Choice, Please Enter Again    2月-04-2021 星期四 EST 16:27:58              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:27:58              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:27:58              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:28:00              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:28:00              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:28:01              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:29:44              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-04-2021 星期四 EST 16:29:49              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-04-2021 星期四 EST 16:29:49              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-04-2021 星期四 EST 16:29:51              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-04-2021 星期四 EST 16:29:52              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-04-2021 星期四 EST 16:29:55              
+{INFO}    [com.revature.services.CustomerService]     
+User created successfully
+    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:29:56              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:29:59              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:29:59              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:29:59              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:30:03              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:30:04              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:30:06              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:32:20              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:33:31              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:33:34              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:33:34              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:33:34              
+{INFO}    [com.revature.ui.CustomerLoginView]     Your Entered Wrong Choice, Please Enter Again    2月-04-2021 星期四 EST 16:33:36              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:33:36              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:33:36              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:33:38              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:33:39              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:33:44              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:36:12              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:36:16              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:36:16              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:36:16              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:36:18              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:36:19              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:36:20              
+{INFO}    [com.revature.ui.MainMenu]     
+-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]                              1. Log In As Customer    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]                              2. Log In As Employee    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]                              3. Create an Customer Account    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]                              4. Create an Employee Account    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]                              5. Exit    2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.MainMenu]     
+                         PLEASE CHOOSE FROM <1-5>:     2月-04-2021 星期四 EST 16:51:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+-----------------------WELCOME TO CUSTOMER'S LOG IN SYSTEM------------------------
+    2月-04-2021 星期四 EST 16:51:08              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:51:08              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:51:08              
+{INFO}    [com.revature.ui.CustomerLoginView]     Your Entered Wrong Choice, Please Enter Again    2月-04-2021 星期四 EST 16:51:09              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   1. Log In To Your Customer Panel    2月-04-2021 星期四 EST 16:51:09              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+                   2. Return Back To Main Menu    2月-04-2021 星期四 EST 16:51:09              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-04-2021 星期四 EST 16:51:11              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-04-2021 星期四 EST 16:51:12              
+{INFO}    [com.revature.ui.CustomerPanel]     
+-----------------------WELCOME TO CUSTOMER'S BANKING SYSTEM-----------------------
+    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              1. Apply For Checking Account    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              2. Apply For Saving Account
+    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              3. Check Account Balance
+    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              4. Deposit To Checking Account    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              5. Deposit To Saving Account    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              6. Withdraw From Checking Account    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              7. Withdraw From Saving Account    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              8. Transfor Money    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]                              9. Exit    2月-04-2021 星期四 EST 16:51:13              
+{INFO}    [com.revature.ui.CustomerPanel]     
+                         PLEASE CHOOSE FROM <0-9>:     2月-04-2021 星期四 EST 16:51:13              

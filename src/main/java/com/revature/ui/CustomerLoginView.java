@@ -7,7 +7,9 @@ import com.revature.util.Sc;
 import com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator;
 
 public class CustomerLoginView implements Menu {
-	public static int id;
+	public static int id;//used to save login_id
+	public static int checkingID;//used to save checking_id
+	public static int savingID;//used to save saving_id
 	private static Logger log = Logger.getLogger(CustomerLoginView.class);
 
 	@Override
@@ -25,7 +27,16 @@ public class CustomerLoginView implements Menu {
 				if(result == -1) {
 					log.info("Login Info Not Found, Please Try Again");
 				}else {
+					//after log in, we set checking saving and login id to variables
 					id = result;
+					System.out.println("ID£º" + id);
+					
+					checkingID = getCheckingIDByLoginID();
+					System.out.println("CHECKING ID: " + checkingID);
+					
+					savingID = getSavingIDByLoginID();
+					System.out.println("SAVING ID: " + savingID);
+					
 					CustomerPanel customerPanel = new CustomerPanel();
 					customerPanel.display();
 				}
@@ -39,6 +50,18 @@ public class CustomerLoginView implements Menu {
 			}
 		}
 
+	}
+
+	private int getSavingIDByLoginID() {
+		CustomerService customerService = new CustomerService();
+		int savingID = customerService.getSavingIDByLoginID();
+		return savingID;
+	}
+
+	private int getCheckingIDByLoginID() {
+		CustomerService customerService = new CustomerService();
+		int checkingID = customerService.getCheckingIDByLoginID();
+		return checkingID;
 	}
 
 	private int getPassword() {
