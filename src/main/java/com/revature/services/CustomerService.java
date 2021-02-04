@@ -15,6 +15,7 @@ public class CustomerService {
 		customerDao = new CustomerDaoImpl();
 	}
 	
+	//1 创建用户
 	public void createCustomer(Customer cus) {
 		int count = customerDao.createCustomer(cus);
 		if(count == 0) {
@@ -22,6 +23,25 @@ public class CustomerService {
 		}else {
 			log.info("\nFailed to create user. Please try again later\n");
 		}
+	}
+	
+	//2 判断用户名和密码是否正确
+	public int validatePassword(String username, String password) {
+		
+		int result = customerDao.validatePassword(username, password);
+		
+		return result;
+	}
+
+	//3 申请支票账户
+	public boolean applyCheckingAccount(int id) {
+		//account number
+		int number = (int) Math.floor(Math.random()*99999999);
+		boolean result = customerDao.applyCheckingAccount(id, number);
+		
+		
+		
+		return result;
 	}
 	
 }
