@@ -41,6 +41,7 @@ public class CustomerPanel implements Menu{
 			case "9":
 				isFlag = false;
 				break;
+				
 			case "1":
 				boolean result = customerService.applyCheckingAccount(CustomerLoginView.id);
 				if(result) {
@@ -49,6 +50,7 @@ public class CustomerPanel implements Menu{
 					log.info("…Í«Îchecking’Àªß ß∞‹");
 				}
 				break;
+				
 			case "2":
 				boolean result2 = customerService.applySavingAccount(CustomerLoginView.id);
 				if(result2) {
@@ -57,16 +59,20 @@ public class CustomerPanel implements Menu{
 					log.info("…Í«Îsaving’Àªß ß∞‹");
 				}
 				break;
+				
 			case "3":
 				customer = customerService.getBalance(CustomerLoginView.id);
 				displayBalance(customer);
 				break;
+				
 			case "4":
 				customerService.depositToChecking();
 				break;
+				
 			case "5":
 				customerService.depositToSaving();
 				break;
+				
 			case "6":
 				if(CustomerLoginView.checkingID == 0) {
 					log.info("You havn't create a checking account yet, please create one first");
@@ -74,6 +80,7 @@ public class CustomerPanel implements Menu{
 					customerService.withdrawFromChecking();
 				}
 				break;
+				
 			case "7":
 				if(CustomerLoginView.savingID == 0) {
 					log.info("You havn't create a saving account yet, please create one first");
@@ -81,11 +88,13 @@ public class CustomerPanel implements Menu{
 					customerService.withdrawFromSaving();
 				}
 				break;
-			case "8":
 				
+			case "8":
+				customerService.transfer();
 				break;
 
 			default:
+				log.info("You entered incorrect number, please enter again");
 				break;
 			}
 		}
