@@ -13,14 +13,16 @@ public class MainMenu implements Menu {
 		boolean isFlag = true;
 		
 		while (isFlag) {
-			log.info("\n-----------------------WELCOME TO XING LIU'S BANKING SYSTEM-----------------------\n");
-			log.info("                         1. Log In As Customer");
-			log.info("                         2. Log In As Employee");
-			log.info("                         3. Create an Customer Account");
-			log.info("                         4. Create an Employee Account");
-			log.info("                         5. Exit");
-			log.info("\n                         PLEASE CHOOSE FROM <1-5>: ");
-
+			log.info("\n================================================");
+			log.info("=     WELCOME TO  BANKING SYSTEM               =");
+			log.info("=       1). Log In As Customer                 =");
+			log.info("=       2). Log In As Employee                 =");
+			log.info("=       3). Create an Customer Account         =");
+			log.info("=       4). Create an Employee Account         =");
+			log.info("=       5). Exit                               =");
+			log.info("=     CHOOSE FROM <1-5>:                       =");
+			log.info("================================================"
+					+ "\n");
 			
 			String choice = Sc.sc.nextLine();
 			

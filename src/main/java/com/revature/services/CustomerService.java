@@ -36,7 +36,7 @@ public class CustomerService {
 	// 3 申请支票账户
 	public boolean applyCheckingAccount(int id) {
 		// account number
-		int number = (int) Math.floor(Math.random() * 99999999);
+		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
 		boolean result = customerDao.applyCheckingAccount(id, number);
 
 		return result;
@@ -44,7 +44,7 @@ public class CustomerService {
 
 	// 4 申请贮蓄账户
 	public boolean applySavingAccount(int id) {
-		int number = (int) Math.floor(Math.random() * 99999999);
+		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
 		boolean result = customerDao.applySavingAccount(id, number);
 
 		return result;
@@ -58,6 +58,10 @@ public class CustomerService {
 
 	// 存钱到支票账户
 	public boolean depositToChecking() {
+		if(CustomerLoginView.checkingID == 0) {
+			log.info("You don't have a checking account, please apply first");
+			return false;
+		}
 		log.info("\nWelcome to the deposit system");
 		log.info("Please enter integer amount you want to deposit to your checking account");
 
@@ -74,7 +78,10 @@ public class CustomerService {
 	}
 
 	public boolean depositToSaving() {
-
+		if(CustomerLoginView.savingID == 0) {
+			log.info("You don't have a saving account, please apply first");
+			return false;
+		}
 		log.info("\nWelcome to the deposit system");
 		log.info("Please enter integer amount you want to deposit to your saving account");
 
@@ -127,7 +134,7 @@ public class CustomerService {
 			if (amount > balance) {
 				log.info("So sorry guys, you don't have enough money inside you chekcing accout, please try later");
 			} else {
-				customerDao.withdrawFromChecking(amount, balance);
+				customerDao.withdrawFromSaving(amount, balance);
 			}
 		}
 
@@ -138,7 +145,7 @@ public class CustomerService {
 		String transferType = ""; // store account type customer want to transfer
 		int amount = 0; // store amount customer want to transfer
 		int balance = 0; // store balance of customer
-		// 1. 获取打算存入账户的账号Get account number
+		// 1. Get account number
 		boolean flag = true;
 		while (flag) {
 			boolean flag2 = false;
@@ -160,34 +167,13 @@ public class CustomerService {
 				if (isExist) {
 					flag = false;
 				} else {
+					log.info("Can't find the account number, please try again");
 					flag = true;
 				}
 			}
 		}
 
-		// 2. 请选择对方账户类型Get account type
-//		boolean flag3 = true;
-//		while (flag3) {
-//			log.info("Please Choose What Type Of Account You Want To Transfer To");
-//			log.info("Enter '1' To Transfer To Checking Account");
-//			log.info("Enter '2' To Transfer To Saving Account");
-//			String choice = Sc.sc.nextLine();
-//
-//			switch (choice) {
-//			case "1":
-//				transferType = "checking";
-//				flag3 = false;
-//				break;
-//			case "2":
-//				transferType = "saving";
-//				flag3 = false;
-//				break;
-//			default:
-//				log.info("Please Enter Only 1 or 2 and try again");
-//			}
-//		}
-
-		// 3. 获取转账金额Get transfer amount
+		// 3. Get transfer amount
 		boolean flag6 = true;
 		while (flag6) {
 			boolean flag4 = false;
@@ -207,7 +193,7 @@ public class CustomerService {
 				}
 			} while (flag4);
 
-			// 4. 获取用户需要转账的账户类型，并判断钱是否足够
+			// 4. set transfer from which account, checking or saving and check balance if enough to complete transaction
 			boolean flag5 = true;
 			while (flag5) {
 				log.info("Please Choose What Type Of Account You Want To Use");
@@ -219,13 +205,14 @@ public class CustomerService {
 				// transfer from checcking account
 				case "1":
 					if (CustomerLoginView.checkingID != 0) {
-						// 查看用户金额是否大于等于转账金额
+						// if balance >= transfer amount
 						balance = customerDao.getCheckingBalanceByAccountId();
 						if (amount > balance) {
 							log.info("you don't have enough money in your checking account, please try less amount");
 							break;
 						} else {
-							log.info("---start to transfer money from your checking account---");
+							log.info("--------------------------------------------------");
+							log.info("start to transfer money from your checking account");
 							// 1. withdraw from checking account
 							customerDao.withdrawFromChecking(amount, balance);
 							// 2. deposit to customer account
@@ -239,13 +226,14 @@ public class CustomerService {
 				// transfer from saving account
 				case "2":
 					if (CustomerLoginView.savingID != 0) {
-						// 查看用户金额是否大于等于转账金额
+						// if balance >= transfer amount
 						balance = customerDao.getSavingBalanceByAccountId();
 						if (amount > balance) {
 							log.info("you don't have enough money in your checking account, please try less amount");
 							break;
 						} else {
-							log.info("---start to transfer money from your checking account---");
+							log.info("--------------------------------------------------");
+							log.info("start to transfer money from your saving account");
 							// 1. withdraw from saving account
 							customerDao.withdrawFromSaving(amount, balance);
 							// 2. deposit to customer account

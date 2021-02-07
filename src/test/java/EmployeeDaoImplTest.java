@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Test;
 
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.EmployeeDaoImpl;
+import com.revature.ui.CustomerLoginView;
+import com.revature.ui.CustomerPanel;
 import com.revature.ui.EmployeeLoginView;
 import com.revature.ui.Menu;
 
@@ -20,6 +22,19 @@ class EmployeeDaoImplTest {
 	public void testEmployeeLoginView() {
 		Menu e = new EmployeeLoginView();
 		e.display();
+	}
+	
+	//test customer ui display
+	@Test
+	public void testCustomerUI() {
+		Menu e = new CustomerPanel();
+		e.display();
+	}
+
+	@Test
+	public void testCustomerLoginUI() {
+		CustomerLoginView cus = new CustomerLoginView();
+		cus.display();
 	}
 	
 }

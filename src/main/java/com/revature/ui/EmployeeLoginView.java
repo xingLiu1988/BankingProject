@@ -20,15 +20,17 @@ public class EmployeeLoginView implements Menu {
 		boolean isFlag = true;
 
 		while (isFlag) {
-			log.info("\nEMPLOYEE MENU");
-			log.info("1. View All Customers");
-			log.info("2. View Customers Account By Enter Account ID");
-			log.info("3. View Customer ");
-			log.info("4. Create an Employee Account");
-			log.info("5. Exit");
-			log.info("PLEASE CHOOSE FROM <1-5>: ");
-
+			log.info("\n================================================");
+			log.info("=              <<EMPLOYEE MENU>>               =");
+			log.info("=     1). View All Customers                   =");
+			log.info("=     2). View Customers Account By Account ID =");
+			log.info("=     3). View Customer                        =");
+			log.info("=     4). Create an Employee Account           =");
+			log.info("=     5). Exit                                 =");
+			log.info("=            PLEASE CHOOSE FROM <1-5>:         =");
+			log.info("================================================\n");
 			String choice = Sc.sc.nextLine();
+			
 
 			switch (choice) {
 			case "1":

@@ -1,13 +1,11 @@
 package com.revature.dao;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.apache.log4j.xml.Log4jEntityResolver;
-
+import org.apache.log4j.Logger;
 import com.revature.models.Account;
 import com.revature.models.Customer;
 import com.revature.ui.CustomerLoginView;
@@ -15,6 +13,7 @@ import com.revature.util.ConnectionUtil;
 
 public class CustomerDaoImpl implements CustomerDao {
 
+	private static Logger log = Logger.getLogger(CustomerDaoImpl.class);
 	@Override
 	public int createCustomer(Customer cus) {
 		int count = 0;
@@ -203,22 +202,20 @@ public class CustomerDaoImpl implements CustomerDao {
 	public boolean depositToChecking(int amountInt) {
 		int checking_id = 0;
 		int balance = 0;
-		System.out.println("进入depositToChecking dao");
+		
 		try (Connection connection = ConnectionUtil.getConnection()) {
-			// 1. 获取checking account id
+			// 1. get checking account id
 			String sql = "SELECT account_id_checking FROM banking.customer WHERE login_id = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, CustomerLoginView.id);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
 				checking_id = resultSet.getInt("account_id_checking");
-				System.out.println("查找id成功");
 			} else {
-				System.out.println("没找到checking account");
 				return false;
 			}
 
-			// 3. 获取当前用户的余额
+			// 3. get balance of checking account
 			String sql2 = "SELECT balance FROM banking.account WHERE account_id = ?";
 			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
 			preparedStatement2.setInt(1, checking_id);
@@ -226,18 +223,20 @@ public class CustomerDaoImpl implements CustomerDao {
 			if (resultSet2.next()) {
 				balance = resultSet2.getInt("balance");
 			}
-			amountInt += balance;
+			balance = balance + amountInt;
 
-			// 2. 更新account id 的balance
+			// 2. update customer checking balance
 			String sql3 = "UPDATE banking.account SET balance = ? WHERE account_id = ?";
 			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
-			preparedStatement3.setInt(1, amountInt);
+			preparedStatement3.setInt(1, balance);
 			preparedStatement3.setInt(2, checking_id);
-			preparedStatement3.executeUpdate();
-			System.out.println("更新成功");
+			int a = preparedStatement3.executeUpdate();
+			if(a == 1) {
+				log.info("Successful deposit amount " + amountInt + " dollars in to your checking account");
+				log.info("Your checking acount balance now: " + balance + " dollars");
+			}
 		} catch (SQLException e) {
-			// TODO: handle exception
-			System.out.println("SQLEXCEPTION");
+			log.info("Transaction failed");
 		}
 
 		return true;
@@ -248,22 +247,20 @@ public class CustomerDaoImpl implements CustomerDao {
 	public boolean depositToSaving(int amountInt) {
 		int saving_id = 0;
 		int balance = 0;
-		System.out.println("进入savingToChecking dao");
+		
 		try (Connection connection = ConnectionUtil.getConnection()) {
-			// 1. 获取saving account id
+			// 1. get saving account id
 			String sql = "SELECT account_id_saving FROM banking.customer WHERE login_id = ?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, CustomerLoginView.id);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
 				saving_id = resultSet.getInt("account_id_saving");
-				System.out.println("查找id成功");
 			} else {
-				System.out.println("没找到checking account");
 				return false;
 			}
 
-			// 3. 获取当前用户的余额
+			// 3. get balance of saving account 
 			String sql2 = "SELECT balance FROM banking.account WHERE account_id = ?";
 			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
 			preparedStatement2.setInt(1, saving_id);
@@ -271,18 +268,21 @@ public class CustomerDaoImpl implements CustomerDao {
 			if (resultSet2.next()) {
 				balance = resultSet2.getInt("balance");
 			}
-			amountInt += balance;
+			balance = balance + amountInt;
 
-			// 2. 更新account id 的balance
+			// 2. update account id balance
 			String sql3 = "UPDATE banking.account SET balance = ? WHERE account_id = ?";
 			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
-			preparedStatement3.setInt(1, amountInt);
+			preparedStatement3.setInt(1, balance);
 			preparedStatement3.setInt(2, saving_id);
-			preparedStatement3.executeUpdate();
-			System.out.println("更新成功");
+			int a = preparedStatement3.executeUpdate();
+			
+			if(a == 1) {
+				log.info("Successful deposit amount " + amountInt + " dollars in to your saving account");
+				log.info("Your saving acount balance now: " + balance + " dollars");
+			}
 		} catch (SQLException e) {
-			// TODO: handle exception
-			System.out.println("SQLEXCEPTION");
+			log.info("Transaction failed");
 		}
 
 		return true;
@@ -335,9 +335,10 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement.setInt(2, CustomerLoginView.checkingID);
 			int success = preparedStatement.executeUpdate();
 			if (success == 1) {
-				System.out.println("取款成功,取款金额：" + amount + ",剩余: " + result);
+				log.info("Successfully withdraw " + amount + " from your checking account");
+				log.info("Your checking account balance => " + result + " dollars");
 			} else {
-				System.out.println("取款失败");
+				log.info("Transaction failed");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -390,22 +391,17 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement.setInt(1, customerIDYouWantToTransfer);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
-				System.out.println("数据查找成功，并返回");
 				exist = true;
 				return exist;
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		System.out.println("查不到数据，并返回");
 		return exist;
 	}
 
-
-
 	@Override
 	public void depositToAccount(int amount, int customerIDYouWantToTransfer) {
-		System.out.println(amount + " " + customerIDYouWantToTransfer);
 		//get balance first
 		int balance = 0;
 		try(Connection connection = ConnectionUtil.getConnection()) {
@@ -423,9 +419,11 @@ public class CustomerDaoImpl implements CustomerDao {
 				preparedStatement2.setInt(2, customerIDYouWantToTransfer);
 				int a = preparedStatement2.executeUpdate();
 				if(a == 1) {
-					System.out.println("存款成功");
+					log.info("Transfer to account " + customerIDYouWantToTransfer + " successfully.");
+					log.info("Transfer amount: " + amount);
+					log.info("--------------------------------------------------");
 				}else {
-					System.out.println("存款失败");
+					log.info("Transaction Failed");
 				}
 			}
 			
@@ -446,9 +444,10 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement.setInt(2, CustomerLoginView.savingID);
 			int success = preparedStatement.executeUpdate();
 			if (success == 1) {
-				System.out.println("取款成功,取款金额：" + amount + ",剩余: " + result);
+				log.info("Successfully withdraw " + amount + " from your saving account");
+				log.info("Your saving account balance " + result);
 			} else {
-				System.out.println("取款失败");
+				log.info("Transaction failed");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
