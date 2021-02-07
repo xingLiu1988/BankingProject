@@ -11,6 +11,10 @@ public class Login {
 		this.password = password;
 	}
 
+	public Login() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getUsername() {
 		return username;
 	}

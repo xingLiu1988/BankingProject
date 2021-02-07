@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Account {
 	
-	private int accountNumber;
-	private String accountTypeChecking;
-	private String accountTypeSaving;
+	private int accountNumberChecking;
+	private int accountNumberSaving;
+	private String accountType;
 	private double balanceChecking;
 	private double balanceSaving;
 	private String dateChecking;
@@ -16,29 +16,33 @@ public class Account {
 		super();
 	}
 
-	public int getAccountNumber() {
-		return accountNumber;
+
+
+	public int getAccountNumberChecking() {
+		return accountNumberChecking;
 	}
 
-	public void setAccountNumber(int accountNumber) {
-		this.accountNumber = accountNumber;
+
+
+	public void setAccountNumberChecking(int accountNumberChecking) {
+		this.accountNumberChecking = accountNumberChecking;
 	}
 
-	public String getAccountTypeChecking() {
-		return accountTypeChecking;
+
+
+	public int getAccountNumberSaving() {
+		return accountNumberSaving;
 	}
 
-	public void setAccountTypeChecking(String accountTypeChecking) {
-		this.accountTypeChecking = accountTypeChecking;
+
+
+	public void setAccountNumberSaving(int accountNumberSaving) {
+		this.accountNumberSaving = accountNumberSaving;
 	}
 
-	public String getAccountTypeSaving() {
-		return accountTypeSaving;
-	}
 
-	public void setAccountTypeSaving(String accountTypeSaving) {
-		this.accountTypeSaving = accountTypeSaving;
-	}
+
+
 
 	public double getBalanceChecking() {
 		return balanceChecking;
@@ -72,13 +76,30 @@ public class Account {
 		this.dateSaving = dateSaving;
 	}
 
+
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+
+
 	@Override
 	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", accountTypeChecking=" + accountTypeChecking
-				+ ", accountTypeSaving=" + accountTypeSaving + ", balanceChecking=" + balanceChecking
+		return "Account [accountNumberChecking=" + accountNumberChecking + ", accountNumberSaving="
+				+ accountNumberSaving + ", accountType=" + accountType + ", balanceChecking=" + balanceChecking
 				+ ", balanceSaving=" + balanceSaving + ", dateChecking=" + dateChecking + ", dateSaving=" + dateSaving
 				+ "]";
 	}
+
+
+	
 	
 	
 	

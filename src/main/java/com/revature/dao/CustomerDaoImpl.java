@@ -164,24 +164,27 @@ public class CustomerDaoImpl implements CustomerDao {
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
 				account = new Account();
-				account.setAccountNumber(resultSet.getInt("account_number"));
-				account.setAccountTypeChecking("checking");
+				account.setAccountNumberChecking(resultSet.getInt("account_number"));
+				account.setAccountType("checking");
 				account.setBalanceChecking(resultSet.getInt("balance"));
 				account.setDateChecking(resultSet.getString("account_created_date"));
 			}
+			
 			// 2. 查找SAVING资料，并保存
 			String sql2 = "SELECT * FROM banking.account INNER JOIN banking.customer ON customer.account_id_saving = account.account_id WHERE customer.login_id = ?";
 			PreparedStatement preparedStatement2 = connection.prepareStatement(sql2);
 			preparedStatement2.setInt(1, id);
 			ResultSet resultSet2 = preparedStatement2.executeQuery();
 			if (resultSet2.next()) {
-				account.setAccountTypeSaving("saving");
+				account.setAccountNumberSaving(resultSet2.getInt("account_number"));
+				account.setAccountType("saving");
 				account.setBalanceSaving(resultSet2.getInt("balance"));
 				account.setDateSaving(resultSet2.getString("account_created_date"));
 			}
+			
 			// 3. 查找姓名资料
 			String sql3 = "SELECT * FROM banking.customer WHERE login_id = ?";
-			PreparedStatement preparedStatement3 = connection.prepareStatement(sql2);
+			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
 			preparedStatement3.setInt(1, id);
 			ResultSet resultSet3 = preparedStatement3.executeQuery();
 			if (resultSet3.next()) {

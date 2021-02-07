@@ -103,16 +103,18 @@ public class CustomerPanel implements Menu{
 	}
 
 	private void displayBalance(Customer customer2) {
-		
-		log.info("\n--------------------------------------------------------------------------------");
+		log.info("-------------------------------------------------------------------------------------------------");
 		log.info("\nCustomer Name: " + customer2.getFirstName() + " " + customer2.getLastName());
-		log.info("Account Number: " + customer2.getAccount().getAccountNumber());
-		if(customer2.getAccount().getAccountTypeChecking() != null) {
-			log.info("Checking Balance: " + customer2.getAccount().getBalanceChecking() + "\t\tCreated Date: " + customer2.getAccount().getDateChecking());
+		//If customer have checking account and display
+		if(customer2.getAccount().getAccountNumberChecking() != 0) {
+			log.info("\nChecking Account Number: " + customer2.getAccount().getAccountNumberChecking() + "\tChecking Balance: " + customer2.getAccount().getBalanceChecking() + "\t\tCreated Date: " + customer2.getAccount().getDateChecking());
 		}
-		if(customer2.getAccount().getAccountTypeSaving() != null) {
-			log.info("Saving Balance: " + customer2.getAccount().getBalanceSaving() + "\t\tCreated Date: " + customer2.getAccount().getDateSaving());
+		//If customer have saving account and display
+		if(customer2.getAccount().getAccountNumberChecking() != 0) {
+			log.info("Saving Account Number: " + customer2.getAccount().getAccountNumberSaving()+ "\t\tSaving Balance: " + customer2.getAccount().getBalanceSaving() + "\t\tCreated Date: " + customer2.getAccount().getDateSaving());
 		}
+		log.info("\n-------------------------------------------------------------------------------------------------");
+		
 	}
 
 	

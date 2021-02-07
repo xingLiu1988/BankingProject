@@ -1,6 +1,7 @@
 package com.revature.models;
 
 public class Customer {
+	private int customerID;
 	private String firstName;
 	private String lastName;
 	private Account account;
@@ -76,6 +77,14 @@ public class Customer {
 	public String toString() {
 		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", account=" + account + ", login="
 				+ login + "]";
+	}
+
+	public int getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
 	}
 	
 	
