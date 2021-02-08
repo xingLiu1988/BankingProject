@@ -73,10 +73,12 @@ public class Customer {
 		this.login = login;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", account=" + account + ", login="
-				+ login + "]";
+		return "Customer [customerID=" + customerID + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", account=" + account + ", login=" + login + "]";
 	}
 
 	public int getCustomerID() {

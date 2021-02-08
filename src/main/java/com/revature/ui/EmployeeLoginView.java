@@ -16,9 +16,9 @@ public class EmployeeLoginView implements Menu {
 
 	@Override
 	public void display() {
-
+		log.info("\nSuccessfull Loged in Employee Panel\n");
 		boolean isFlag = true;
-
+		
 		while (isFlag) {
 			log.info("\n================================================");
 			log.info("=              <<EMPLOYEE MENU>>               =");
@@ -40,8 +40,7 @@ public class EmployeeLoginView implements Menu {
 				break;
 			case "2":
 				log.debug("employee entered 2");
-				Menu employeeLoginView = new EmployeeLoginView();
-				employeeLoginView.display();
+				employeeService.viewSingleCustomerAccount();
 				break;
 			case "3":
 				log.debug("customer entered 3");

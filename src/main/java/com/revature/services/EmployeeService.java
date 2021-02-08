@@ -1,12 +1,16 @@
 package com.revature.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.revature.dao.CustomerDao;
+import com.revature.dao.CustomerDaoImpl;
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.EmployeeDaoImpl;
 import com.revature.models.Customer;
+import com.revature.util.Sc;
 
 
 public class EmployeeService {
@@ -35,6 +39,50 @@ public class EmployeeService {
 			
 			log.info("----------------------------------------------------------------------------------------------------------------------------");
 		}
+	}
+
+	public void viewSingleCustomerAccount() {
+		int customerID = 0;
+		boolean flag1 = false;
+		do {
+			flag1 = false;
+			try {
+				log.info("Please Enter Customer ID To Search");
+				customerID = Integer.parseInt(Sc.sc.nextLine());
+				System.out.println("ƒ„ ‰»Î¡À " + customerID);
+			} catch (NumberFormatException e) {
+				log.info("incorrect number, please try again");
+				flag1 = true;
+			}
+		} while (flag1);
+		List<Customer> list = new ArrayList<>();
+		list = employeeDao.viewSingleCustomerAccount(customerID);
+		if(list.size() == 0) {
+			log.info("No Record");
+		}else {
+			log.info(list);
+			for(int i = 0; i < list.size(); i++) {
+				log.info("----------------------------------------------------------------------------------------------------------------");
+				log.info("\nCustomer Name: " + list.get(i).getFirstName() + " " + list.get(i).getLastName());
+				//If customer have checking account and display
+				if(list.get(i).getAccount().getAccountNumberChecking() != 0) {
+					log.info("\nChecking Account Number: " + list.get(i).getAccount().getAccountNumberChecking() + "\tChecking Balance: " + list.get(i).getAccount().getBalanceChecking() + "\t\tCreated Date: " + list.get(i).getAccount().getDateChecking());
+				}
+				//If customer have saving account and display
+				if(list.get(i).getAccount().getAccountNumberSaving() != 0) {
+					log.info("Saving  Account  Number: " + list.get(i).getAccount().getAccountNumberSaving()+ "\tSaving   Balance: " + list.get(i).getAccount().getBalanceSaving() + "\t\tCreated Date: " + list.get(i).getAccount().getDateSaving());
+				}
+				log.info("\n----------------------------------------------------------------------------------------------------------------");
+			}
+		}
+	}
+
+	public int validatePassword() {
+		int result = -1;
+		CustomerDao customerDao = new CustomerDaoImpl();
+		customerDao.validatePassword(null, null);
+		
+		return result;
 	}
 
 }

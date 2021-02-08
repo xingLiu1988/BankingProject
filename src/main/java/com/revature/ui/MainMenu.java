@@ -1,6 +1,9 @@
 package com.revature.ui;
 
 import org.apache.log4j.Logger;
+
+import com.revature.services.CustomerService;
+import com.revature.services.EmployeeService;
 import com.revature.util.Sc;
 
 public class MainMenu implements Menu {
@@ -33,8 +36,13 @@ public class MainMenu implements Menu {
 				break;
 			case "2":
 				log.debug("employee entered 2");
-				Menu employeeLoginView = new EmployeeLoginView();
-				employeeLoginView.display();
+				int result = getPassword();
+				if (result == -1) {
+					log.info("Login Failed, Please Try Again");
+				} else {
+					Menu employeeLoginView = new EmployeeLoginView();
+					employeeLoginView.display();
+				}
 				break;
 			case "3":
 				log.debug("customer entered 3");
@@ -51,5 +59,21 @@ public class MainMenu implements Menu {
 		}
 
 	}
+	private int getPassword() {
+		// Step 1: get username
+		log.info("1. Please enter your username");
+		String username = Sc.sc.nextLine();
 
+		// Step 2: get password
+		log.info("\n2. Please enter your password");
+		String password = Sc.sc.nextLine();
+
+		// Step 3: validate username and password
+		CustomerService customerService = new CustomerService();
+		int result = customerService.validatePassword(username, password);
+		 
+
+		// Step 4: if result = -1 not found, else return with login_id
+		return result;
+	}
 }

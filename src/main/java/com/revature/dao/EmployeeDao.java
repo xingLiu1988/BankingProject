@@ -10,7 +10,7 @@ public interface EmployeeDao {
 	public List<Customer> viewAllCustomersAccount();
 	
 	//2. employee can view single customer
-	public Customer viewSingleCustomerAccount(int customerID);
+	public List<Customer> viewSingleCustomerAccount(int customerID);
 	
 	//3. employee can delete single customer
 	public boolean deleteCustomerByCustomerID(int customerID);
