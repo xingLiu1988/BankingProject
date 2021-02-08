@@ -13,7 +13,7 @@ public interface EmployeeDao {
 	public List<Customer> viewSingleCustomerAccount(int customerID);
 	
 	//3. employee can delete single customer
-	public boolean deleteCustomerByCustomerID(int customerID);
+	public int deleteCustomerByAccountNumber(int accountNumber);
 	
 	//4. employee can view single customer log
 	

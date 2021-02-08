@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.EmployeeDaoImpl;
+import com.revature.models.Customer;
 import com.revature.services.EmployeeService;
 import com.revature.ui.CustomerLoginView;
 import com.revature.ui.CustomerPanel;
@@ -15,7 +19,9 @@ class EmployeeDaoImplTest {
 	public void testViewAllCustomersAccount() {
 		System.out.println("nihao");
 		EmployeeDao e = new EmployeeDaoImpl();
-		e.viewAllCustomersAccount();
+		List<Customer> list = new ArrayList<>();
+		list = e.viewAllCustomersAccount();
+		System.out.println(list);
 	}
 	
 	//test employee login ui
@@ -44,4 +50,10 @@ class EmployeeDaoImplTest {
 		e.viewSingleCustomerAccount();
 	}
 	
+	@Test
+	public void testDeleteCustomerByAccountNumber() {
+		EmployeeDaoImpl e = new EmployeeDaoImpl();
+		int result = e.deleteCustomerByAccountNumber(94411802);
+		System.out.println(result);
+	}
 }

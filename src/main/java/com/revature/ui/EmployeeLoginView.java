@@ -18,20 +18,18 @@ public class EmployeeLoginView implements Menu {
 	public void display() {
 		log.info("\nSuccessfull Loged in Employee Panel\n");
 		boolean isFlag = true;
-		
 		while (isFlag) {
 			log.info("\n================================================");
 			log.info("=              <<EMPLOYEE MENU>>               =");
 			log.info("=     1). View All Customers                   =");
 			log.info("=     2). View Customers Account By Account ID =");
-			log.info("=     3). Reject Customer Account By ID        =");
+			log.info("=     3). Reject Customer Accout               =");
 			log.info("=     4). View All Transaction                 =");
 			log.info("=     5). View Single Transaction By ID        =");
 			log.info("=     6). Exit                                 =");
 			log.info("=            PLEASE CHOOSE FROM <1-5>:         =");
 			log.info("================================================\n");
 			String choice = Sc.sc.nextLine();
-			
 
 			switch (choice) {
 			case "1":
@@ -44,13 +42,15 @@ public class EmployeeLoginView implements Menu {
 				break;
 			case "3":
 				log.debug("customer entered 3");
-				Menu createCustomerView = new CreateCustomerView();
-				createCustomerView.display();
+				employeeService.deleteCustomerByAccountNumber();
 				break;
 			case "4":
-				log.debug("employee entered 4");
-				Menu createEmployeeView = new CreateEmployeeView();
-				createEmployeeView.display();
+				log.debug("customer entered 4");
+				
+				break;
+			case "5":
+				log.debug("employee entered 5");
+				
 				break;
 			case "6":
 				log.debug("customer entered 6 to exit");
