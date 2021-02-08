@@ -1,5 +1,10 @@
 package com.revature.services;
 
+import java.lang.ProcessHandle.Info;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+
 import org.apache.log4j.Logger;
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerDaoImpl;
@@ -35,19 +40,62 @@ public class CustomerService {
 
 	// 3 …Í«Î÷ß∆±’Àªß
 	public boolean applyCheckingAccount(int id) {
-		// account number
-		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
-		boolean result = customerDao.applyCheckingAccount(id, number);
+		// check if customer already have a checking account, if yes, will reject
+		int checkingID = customerDao.getCheckingIDByLoginID();
+		if (checkingID != 0) {
+			log.info("You have checking account alrady");
+			return false;
+		}
 
-		return result;
+		// randomly create an account number
+		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
+
+		// get date of birth
+		log.info("\nPlease enter your date of birth (MM/DD/YYYY)");
+		String dob = Sc.sc.nextLine();
+		LocalDate dobString = LocalDate.parse(dob, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+		Period period = Period.between(dobString, LocalDate.now());
+		int age = period.getYears();
+
+		// only prove if over 18 years old
+		if (age >= 18) {
+			log.info("Age Over 18, Apply Checking Account Proved");
+			boolean result = customerDao.applyCheckingAccount(id, number, dob);
+			return result;
+		} else {
+			log.info("Age Less Than 18, Apply Checking Account Rejected");
+			return false;
+		}
+
 	}
 
 	// 4 …Í«Î÷¸–Ó’Àªß
 	public boolean applySavingAccount(int id) {
-		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
-		boolean result = customerDao.applySavingAccount(id, number);
+		// check if customer already have a checking account, if yes, will reject
+		int savingID = customerDao.getSavingIDByLoginID();
+		if (savingID != 0) {
+			log.info("You have saving account alrady");
+			return false;
+		}
 
-		return result;
+		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
+		
+		// get date of birth
+		log.info("\nPlease enter your date of birth (MM/DD/YYYY)");
+		String dob = Sc.sc.nextLine();
+		LocalDate dobString = LocalDate.parse(dob, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+		Period period = Period.between(dobString, LocalDate.now());
+		int age = period.getYears();
+
+		// only prove if over 18 years old
+		if (age >= 18) {
+			log.info("Age Over 18, Apply Checking Account Proved");
+			boolean result = customerDao.applySavingAccount(id, number, dob);
+			return result;
+		} else {
+			log.info("Age Less Than 18, Apply Checking Account Rejected");
+			return false;
+		}
 	}
 
 	// 5 ≤Èø¥”‡∂Ó
@@ -58,7 +106,7 @@ public class CustomerService {
 
 	// ¥Ê«ÆµΩ÷ß∆±’Àªß
 	public boolean depositToChecking() {
-		if(CustomerLoginView.checkingID == 0) {
+		if (CustomerLoginView.checkingID == 0) {
 			log.info("You don't have a checking account, please apply first");
 			return false;
 		}
@@ -78,7 +126,7 @@ public class CustomerService {
 	}
 
 	public boolean depositToSaving() {
-		if(CustomerLoginView.savingID == 0) {
+		if (CustomerLoginView.savingID == 0) {
 			log.info("You don't have a saving account, please apply first");
 			return false;
 		}
@@ -193,7 +241,8 @@ public class CustomerService {
 				}
 			} while (flag4);
 
-			// 4. set transfer from which account, checking or saving and check balance if enough to complete transaction
+			// 4. set transfer from which account, checking or saving and check balance if
+			// enough to complete transaction
 			boolean flag5 = true;
 			while (flag5) {
 				log.info("Please Choose What Type Of Account You Want To Use");
@@ -216,7 +265,7 @@ public class CustomerService {
 							// 1. withdraw from checking account
 							customerDao.withdrawFromChecking(amount, balance);
 							// 2. deposit to customer account
-							customerDao.depositToAccount(amount,customerIDYouWantToTransfer);
+							customerDao.depositToAccount(amount, customerIDYouWantToTransfer);
 							flag5 = false;
 						}
 					} else {
@@ -237,7 +286,7 @@ public class CustomerService {
 							// 1. withdraw from saving account
 							customerDao.withdrawFromSaving(amount, balance);
 							// 2. deposit to customer account
-							customerDao.depositToAccount(amount,customerIDYouWantToTransfer);
+							customerDao.depositToAccount(amount, customerIDYouWantToTransfer);
 							flag5 = false;
 						}
 					} else {

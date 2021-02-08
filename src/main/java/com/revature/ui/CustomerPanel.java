@@ -22,19 +22,19 @@ public class CustomerPanel implements Menu {
 		boolean isFlag = true;
 
 		while (isFlag) {
-		  log.info("\n================================================");
-			log.info("=     CUSTOMER PANEL                           =");
-			log.info("=       1). Apply For Checking Account         =");
-			log.info("=       2). Apply For Saving Account           =");
-			log.info("=       3). Check Account Balance              =");
-			log.info("=       4). Deposit To Checking Account        =");
-			log.info("=       5). Deposit To Saving Account          =");
-			log.info("=       6). Withdraw From Checking Account     =");
-			log.info("=       7). Withdraw From Saving Account       =");
-			log.info("=       8). Transfor Money                     =");
-			log.info("=       9.  Exit                               =");
-			log.info("=     PLEASE CHOOSE FROM <0-9>:                =");
-			log.info("================================================");
+		  log.info("\n=================================================");
+			log.info("=     CUSTOMER PANEL                            =");
+			log.info("=       1). Apply For Checking Account(over 18) =");
+			log.info("=       2). Apply For Saving Account(over 18)   =");
+			log.info("=       3). Check Account Balance               =");
+			log.info("=       4). Deposit To Checking Account         =");
+			log.info("=       5). Deposit To Saving Account           =");
+			log.info("=       6). Withdraw From Checking Account      =");
+			log.info("=       7). Withdraw From Saving Account        =");
+			log.info("=       8). Transfor Money                      =");
+			log.info("=       9.  Exit                                =");
+			log.info("=     PLEASE CHOOSE FROM <0-9>:                 =");
+			log.info("=================================================");
 			String choice = Sc.sc.nextLine();
 			
 		
@@ -45,21 +45,11 @@ public class CustomerPanel implements Menu {
 				break;
 
 			case "1":
-				boolean result = customerService.applyCheckingAccount(CustomerLoginView.id);
-				if (result) {
-					log.info("…Í«Îchecking’Àªß≥…π¶");
-				} else {
-					log.info("…Í«Îchecking’Àªß ß∞‹");
-				}
+				customerService.applyCheckingAccount(CustomerLoginView.id);
 				break;
 
 			case "2":
-				boolean result2 = customerService.applySavingAccount(CustomerLoginView.id);
-				if (result2) {
-					log.info("…Í«Îsavingg’Àªß≥…π¶");
-				} else {
-					log.info("…Í«Îsaving’Àªß ß∞‹");
-				}
+				customerService.applySavingAccount(CustomerLoginView.id);
 				break;
 
 			case "3":
@@ -106,7 +96,6 @@ public class CustomerPanel implements Menu {
 	private void displayBalance(Customer customer2) {
 		
 		if(customer2.getAccount() == null) {
-			
 			log.info("\nYou havn't create any account yet, please apply first\n");
 		}else {
 			log.info("----------------------------------------------------------------------------------------------------------------");

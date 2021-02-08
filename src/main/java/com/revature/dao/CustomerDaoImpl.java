@@ -76,7 +76,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	}
 
 	@Override
-	public boolean applyCheckingAccount(int id, int number) {
+	public boolean applyCheckingAccount(int id, int number, String dob) {
 		int accountID = 0;
 		try (Connection connection = ConnectionUtil.getConnection()) {
 			// 1. 插入数据到account table
@@ -97,11 +97,12 @@ public class CustomerDaoImpl implements CustomerDao {
 				CustomerLoginView.checkingID = accountID;
 			}
 
-			// 3. 修改customer中login_id为id的account_id
-			String sql3 = "UPDATE banking.customer SET account_id_checking = ? WHERE login_id = ?";
+			// 3. 修改customer中login_id为id的account_id_checking and update dob
+			String sql3 = "UPDATE banking.customer SET account_id_checking = ?, dob = ? WHERE login_id = ?";
 			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
 			preparedStatement3.setInt(1, accountID);
-			preparedStatement3.setInt(2, id);
+			preparedStatement3.setString(2, dob);
+			preparedStatement3.setInt(3, id);
 			preparedStatement3.executeUpdate();
 			return true;
 		} catch (SQLException e) {
@@ -114,7 +115,7 @@ public class CustomerDaoImpl implements CustomerDao {
 	}
 
 	@Override
-	public boolean applySavingAccount(int id, int number) {
+	public boolean applySavingAccount(int id, int number, String dob) {
 		int accountID = 0;
 		try (Connection connection = ConnectionUtil.getConnection()) {
 			// 1. 插入数据到account table
@@ -136,10 +137,11 @@ public class CustomerDaoImpl implements CustomerDao {
 			}
 
 			// 3. 修改customer中login_id为id的account_id
-			String sql3 = "UPDATE banking.customer SET account_id_saving = ? WHERE login_id = ?";
+			String sql3 = "UPDATE banking.customer SET account_id_saving = ?, dob = ? WHERE login_id = ?";
 			PreparedStatement preparedStatement3 = connection.prepareStatement(sql3);
 			preparedStatement3.setInt(1, accountID);
-			preparedStatement3.setInt(2, id);
+			preparedStatement3.setString(2, dob);
+			preparedStatement3.setInt(3, id);
 			preparedStatement3.executeUpdate();
 			return true;
 		} catch (SQLException e) {

@@ -24,9 +24,10 @@ public class EmployeeLoginView implements Menu {
 			log.info("=              <<EMPLOYEE MENU>>               =");
 			log.info("=     1). View All Customers                   =");
 			log.info("=     2). View Customers Account By Account ID =");
-			log.info("=     3). View Customer                        =");
-			log.info("=     4). Create an Employee Account           =");
-			log.info("=     5). Exit                                 =");
+			log.info("=     3). Reject Customer Account By ID        =");
+			log.info("=     4). View All Transaction                 =");
+			log.info("=     5). View Single Transaction By ID        =");
+			log.info("=     6). Exit                                 =");
 			log.info("=            PLEASE CHOOSE FROM <1-5>:         =");
 			log.info("================================================\n");
 			String choice = Sc.sc.nextLine();
@@ -52,8 +53,8 @@ public class EmployeeLoginView implements Menu {
 				Menu createEmployeeView = new CreateEmployeeView();
 				createEmployeeView.display();
 				break;
-			case "5":
-				log.debug("customer entered 5 to exit");
+			case "6":
+				log.debug("customer entered 6 to exit");
 				isFlag = false;
 				break;
 			default:

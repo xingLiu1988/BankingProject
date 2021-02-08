@@ -20,17 +20,21 @@ public class EmployeeService {
 	public void viewAllCustomersAccount() {
 		
 		List<Customer> list =  employeeDao.viewAllCustomersAccount();
-		log.info("\n----------------------------------------------------------------------------------------------------------------------------");
-		log.info("CustomerID\tFirstName\tLastName\tAccountType\tAccountNumber\tBalance\t\tOpenDate");
-		for(int i = 0; i < list.size(); i++) {
-			if(list.get(i).getAccount().getAccountType() == "checking") {
-				log.info(list.get(i).getCustomerID() + "\t\t" + list.get(i).getFirstName()+ "\t\t" + list.get(i).getLastName()+ "\t\t" + "checking" + "\t" +list.get(i).getAccount().getAccountNumberChecking() + "\t" +list.get(i).getAccount().getBalanceChecking()+ "\t\t" +list.get(i).getAccount().getDateChecking());				
-			}else {
-				log.info(list.get(i).getCustomerID() + "\t\t" + list.get(i).getFirstName()+ "\t\t" + list.get(i).getLastName()+ "\t\t" + "saving" + "\t\t"+list.get(i).getAccount().getAccountNumberSaving() + "  \t" + +list.get(i).getAccount().getBalanceSaving()+ "\t\t" +list.get(i).getAccount().getDateSaving());
+		if(list.size() == 0) {
+			log.info("Empty List");
+		}else {
+			log.info("\n----------------------------------------------------------------------------------------------------------------------------");
+			log.info("CustomerID\tFirstName\tLastName\tAccountType\tAccountNumber\tBalance\t\tOpenDate");
+			for(int i = 0; i < list.size(); i++) {
+				if(list.get(i).getAccount().getAccountType() == "checking") {
+					log.info(list.get(i).getCustomerID() + "\t\t" + list.get(i).getFirstName()+ "\t\t" + list.get(i).getLastName()+ "\t\t" + "checking" + "\t" +list.get(i).getAccount().getAccountNumberChecking() + "\t" +list.get(i).getAccount().getBalanceChecking()+ "\t\t" +list.get(i).getAccount().getDateChecking());				
+				}else {
+					log.info(list.get(i).getCustomerID() + "\t\t" + list.get(i).getFirstName()+ "\t\t" + list.get(i).getLastName()+ "\t\t" + "saving" + "\t\t"+list.get(i).getAccount().getAccountNumberSaving() + "  \t" + +list.get(i).getAccount().getBalanceSaving()+ "\t\t" +list.get(i).getAccount().getDateSaving());
+				}
 			}
+			
+			log.info("----------------------------------------------------------------------------------------------------------------------------");
 		}
-		
-		log.info("----------------------------------------------------------------------------------------------------------------------------");
 	}
 
 }

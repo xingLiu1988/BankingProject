@@ -18,9 +18,8 @@ public class MainMenu implements Menu {
 			log.info("=       1). Log In As Customer                 =");
 			log.info("=       2). Log In As Employee                 =");
 			log.info("=       3). Create an Customer Account         =");
-			log.info("=       4). Create an Employee Account         =");
-			log.info("=       5). Exit                               =");
-			log.info("=     CHOOSE FROM <1-5>:                       =");
+			log.info("=       4). Exit                               =");
+			log.info("=     CHOOSE FROM <1-4>:                       =");
 			log.info("================================================"
 					+ "\n");
 			
@@ -43,12 +42,7 @@ public class MainMenu implements Menu {
 				createCustomerView.display();
 				break;
 			case "4":
-				log.debug("employee entered 4");
-				Menu createEmployeeView = new CreateEmployeeView();
-				createEmployeeView.display();
-				break;
-			case "5":
-				log.debug("customer entered 5 to exit");
+				log.debug("customer entered 4 to exit");
 				isFlag = false;
 				break;
 			default:
