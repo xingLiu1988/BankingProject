@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.EmployeeDaoImpl;
 import com.revature.models.Customer;
+import com.revature.services.CustomerService;
 import com.revature.services.EmployeeService;
+import com.revature.ui.CreateCustomerView;
 import com.revature.ui.CustomerLoginView;
 import com.revature.ui.CustomerPanel;
 import com.revature.ui.EmployeeLoginView;
@@ -55,5 +57,31 @@ class EmployeeDaoImplTest {
 		EmployeeDaoImpl e = new EmployeeDaoImpl();
 		int result = e.deleteCustomerByAccountNumber(94411802);
 		System.out.println(result);
+	}
+	
+	@Test
+	public void testValidateUsernameAndPassword() {
+		CustomerLoginView c = new CustomerLoginView();
+		c.display();
+	}
+	
+	@Test
+	public void testViewSingleCustomer() {
+		EmployeeService e = new EmployeeService();
+		e.viewSingleCustomerAccount();
+	}
+	
+	@Test
+	public void testGetBalance() {
+		CustomerService c = new CustomerService();
+		Customer customer = c.getBalance(2);
+		System.out.println(customer);
+	}
+	
+	@Test
+	public void testCreateCustomer() {
+		Menu c = new CreateCustomerView();
+		c.display();
+		
 	}
 }

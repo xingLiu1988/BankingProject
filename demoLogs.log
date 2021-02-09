@@ -11965,3 +11965,693 @@ Successfull Loged in Employee Panel
 {INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
     2月-08-2021 星期一 EST 15:23:14              
 {INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 15:23:17              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 15:26:39              
+{INFO}    [com.revature.ui.MainMenu]     1. Please enter your username    2月-08-2021 星期一 EST 15:26:42              
+{INFO}    [com.revature.ui.MainMenu]     
+2. Please enter your password    2月-08-2021 星期一 EST 15:26:43              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+Successfull Loged in Employee Panel
+    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:26:48              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 15:26:49              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.services.EmployeeService]     1		xing		liu		No Banking Account     2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:26:50              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 15:28:41              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:28:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-08-2021 星期一 EST 15:28:45              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-08-2021 星期一 EST 15:28:46              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+You have successfully logged into the system    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 15:28:48              
+{INFO}    [com.revature.services.CustomerService]     
+Please enter your date of birth (MM/DD/YYYY)    2月-08-2021 星期一 EST 15:28:49              
+{INFO}    [com.revature.services.CustomerService]     Age Over 18, Apply Checking Account Proved    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 15:28:53              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:28:55              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 15:28:57              
+{INFO}    [com.revature.ui.MainMenu]     1. Please enter your username    2月-08-2021 星期一 EST 15:28:59              
+{INFO}    [com.revature.ui.MainMenu]     
+2. Please enter your password    2月-08-2021 星期一 EST 15:29:01              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+Successfull Loged in Employee Panel
+    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:29:02              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 15:29:03              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.services.EmployeeService]     
+Checking Account Number: 74051361	Checking Balance: 0.0		Created Date: 2021-02-08 15:28:53.220862    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:29:04              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Account Number To delete    2月-08-2021 星期一 EST 15:30:03              
+{INFO}    [com.revature.services.EmployeeService]     
+deletion success, thanks
+    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:30:19              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.services.EmployeeService]     CustomerID	FirstName	LastName	AccountType	AccountNumber	Balance		OpenDate    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.services.EmployeeService]     2		yan		chen		No Banking Account     2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.services.EmployeeService]     3		xinzhao		wang		No Banking Account     2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.services.EmployeeService]     1		xing		liu		No Banking Account     2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 15:30:29              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 22:17:58              
+{INFO}    [com.revature.ui.MainMenu]     1. Please enter your username    2月-08-2021 星期一 EST 22:19:27              
+{INFO}    [com.revature.ui.MainMenu]     
+2. Please enter your password    2月-08-2021 星期一 EST 22:19:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+Successfull Loged in Employee Panel
+    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:19:35              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     CustomerID	FirstName	LastName	AccountType	AccountNumber	Balance		OpenDate    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     2		yan		chen		No Banking Account     2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     3		xinzhao		wang		No Banking Account     2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     1		xing		liu		No Banking Account     2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:19:42              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:20:21              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.services.EmployeeService]     1		xing		liu		No Banking Account     2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:20:23              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:20:26              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: yan chen    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.services.EmployeeService]     2		yan		chen		No Banking Account     2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:20:27              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:20:29              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xinzhao wang    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.services.EmployeeService]     3		xinzhao		wang		No Banking Account     2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     
+================================================    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =              <<EMPLOYEE MENU>>               =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     1). View All Customers                   =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     2). View Customers Account By Account ID =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     3). Reject Customer Accout               =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     4). View All Transaction                 =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     5). View Single Transaction By ID        =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =     6). Exit                                 =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     =            PLEASE CHOOSE FROM <1-5>:         =    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.EmployeeLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:20:30              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 22:20:45              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:20:48              
+{INFO}    [com.revature.ui.CustomerLoginView]     Your Entered Wrong Choice, Please Enter Again    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:20:50              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-08-2021 星期一 EST 22:20:52              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-08-2021 星期一 EST 22:20:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+You have successfully logged into the system    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:20:55              
+{INFO}    [com.revature.services.CustomerService]     
+Please enter your date of birth (MM/DD/YYYY)    2月-08-2021 星期一 EST 22:20:59              
+{INFO}    [com.revature.services.CustomerService]     Age Over 18, Apply Checking Account Proved    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:07              
+{INFO}    [com.revature.services.CustomerService]     
+Please enter your date of birth (MM/DD/YYYY)    2月-08-2021 星期一 EST 22:21:15              
+{INFO}    [com.revature.services.CustomerService]     Age Over 18, Apply Checking Account Proved    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:19              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 0.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 0.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:22              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-08-2021 星期一 EST 22:21:29              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your checking account    2月-08-2021 星期一 EST 22:21:29              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Successful deposit amount 1000 dollars in to your checking account    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Your checking acount balance now: 1000 dollars    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:31              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 1000.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 0.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:34              
+{INFO}    [com.revature.services.CustomerService]     
+Welcome to the deposit system    2月-08-2021 星期一 EST 22:21:42              
+{INFO}    [com.revature.services.CustomerService]     Please enter integer amount you want to deposit to your saving account    2月-08-2021 星期一 EST 22:21:42              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Successful deposit amount 5000 dollars in to your saving account    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Your saving acount balance now: 5000 dollars    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:46              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 1000.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 5000.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:47              
+{INFO}    [com.revature.services.CustomerService]     How much you want to withdraw from your checking account?    2月-08-2021 星期一 EST 22:21:51              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Successfully withdraw 1 from your checking account    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Your checking account balance => 999 dollars    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:55              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 999.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 5000.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:21:58              
+{INFO}    [com.revature.services.CustomerService]     How much you want to withdraw from your saving account?    2月-08-2021 星期一 EST 22:22:04              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Successfully withdraw 4444 from your saving account    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Your saving account balance 556    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:22:09              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 999.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 556.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:22:11              
+{INFO}    [com.revature.services.CustomerService]     Please Enter Customer Account Number You Want To Transfer To Or Enter -1 To Quit    2月-08-2021 星期一 EST 22:22:24              
+{INFO}    [com.revature.services.CustomerService]     Please Enter Amount You Want To Transfer <ONLY INTEGER LIKE: 500 DOLLARS>    2月-08-2021 星期一 EST 22:22:32              
+{INFO}    [com.revature.services.CustomerService]     Please Choose What Type Of Account You Want To Use    2月-08-2021 星期一 EST 22:22:35              
+{INFO}    [com.revature.services.CustomerService]     Enter '1' To Transfer From Your Checking Account    2月-08-2021 星期一 EST 22:22:35              
+{INFO}    [com.revature.services.CustomerService]     Enter '2' To Transfer From Your Saving Account    2月-08-2021 星期一 EST 22:22:35              
+{INFO}    [com.revature.services.CustomerService]     --------------------------------------------------    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.services.CustomerService]     start to transfer money from your checking account    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Successfully withdraw 100 from your checking account    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Your checking account balance => 899 dollars    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Transfer to account 23018920 successfully.    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     Transfer amount: 100    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.dao.CustomerDaoImpl]     --------------------------------------------------    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:22:38              
+{INFO}    [com.revature.ui.CustomerPanel]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:22:42              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:22:42              
+{INFO}    [com.revature.ui.CustomerPanel]     
+Checking Account Number: 25429216	Checking Balance: 899.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     Saving  Account  Number: 23018920	Saving   Balance: 656.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:22:43              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:22:54              
+{INFO}    [com.revature.ui.MainMenu]     
+================================================    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =     WELCOME TO  BANKING SYSTEM               =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =       1). Log In As Customer                 =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =       2). Log In As Employee                 =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =       3). Create an Customer Account         =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =       4). Exit                               =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     =     CHOOSE FROM <1-4>:                       =    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     ================================================
+    2月-08-2021 星期一 EST 22:22:56              
+{INFO}    [com.revature.ui.MainMenu]     1. Please enter your username    2月-08-2021 星期一 EST 22:22:59              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+================================================    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CUSTOMER LOG IN                          =    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       1). Log In To Customer Panel           =    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     =       2). Back To Main Menu                  =    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     =     CHOOSE FROM <1-2>:                       =    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     ================================================
+    2月-08-2021 星期一 EST 22:26:05              
+{INFO}    [com.revature.ui.CustomerLoginView]     1. Please enter your username    2月-08-2021 星期一 EST 22:26:12              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+2. Please enter your password    2月-08-2021 星期一 EST 22:26:18              
+{INFO}    [com.revature.ui.CustomerLoginView]     
+You have successfully logged into the system    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     
+=================================================    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =     CUSTOMER PANEL                            =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       1). Apply For Checking Account(over 18) =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       2). Apply For Saving Account(over 18)   =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       3). Check Account Balance               =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       4). Deposit To Checking Account         =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       5). Deposit To Saving Account           =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       6). Withdraw From Checking Account      =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       7). Withdraw From Saving Account        =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       8). Transfor Money                      =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =       9.  Exit                                =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =     PLEASE CHOOSE FROM <0-9>:                 =    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CustomerPanel]     =================================================    2月-08-2021 星期一 EST 22:26:20              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-08-2021 星期一 EST 22:31:06              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-08-2021 星期一 EST 22:31:06              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-08-2021 星期一 EST 22:31:28              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-08-2021 星期一 EST 22:31:29              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-08-2021 星期一 EST 22:31:32              
+{INFO}    [com.revature.services.CustomerService]     
+Failed to create user. Please try again later
+    2月-08-2021 星期一 EST 22:31:34              
+{INFO}    [com.revature.ui.CreateCustomerView]     
+-----------------------WELCOME TO CREATE CUSTOMER ACCOUNT--------------------------    2月-08-2021 星期一 EST 22:31:48              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your First Name    2月-08-2021 星期一 EST 22:31:48              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Last Name    2月-08-2021 星期一 EST 22:31:52              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Username    2月-08-2021 星期一 EST 22:31:53              
+{INFO}    [com.revature.ui.CreateCustomerView]     Please Enter Your Password    2月-08-2021 星期一 EST 22:31:55              
+{INFO}    [com.revature.services.CustomerService]     
+User created successfully
+    2月-08-2021 星期一 EST 22:31:56              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:36:26              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:36:36              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     
+Checking Account Number: 25429216	Checking Balance: 899.0		Created Date: 2021-02-08 22:21:07.569224    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xing liu    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     Saving  Account  Number: 23018920	Saving   Balance: 656.0		Created Date: 2021-02-08 22:21:19.397531    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:36:39              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:36:56              
+{INFO}    [com.revature.services.EmployeeService]     ----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:36:58              
+{INFO}    [com.revature.services.EmployeeService]     
+Customer Name: xinzhao wang    2月-08-2021 星期一 EST 22:36:58              
+{INFO}    [com.revature.services.EmployeeService]     3		xinzhao		wang		No Banking Account     2月-08-2021 星期一 EST 22:36:58              
+{INFO}    [com.revature.services.EmployeeService]     
+----------------------------------------------------------------------------------------------------------------    2月-08-2021 星期一 EST 22:36:58              
+{INFO}    [com.revature.services.EmployeeService]     Please Enter Customer ID To Search    2月-08-2021 星期一 EST 22:41:41              
