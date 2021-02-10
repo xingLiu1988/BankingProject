@@ -1,11 +1,8 @@
 package com.revature.ui;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 import org.apache.log4j.Logger;
-
 import com.revature.models.Customer;
 import com.revature.services.CustomerService;
 import com.revature.util.Sc;
@@ -41,9 +38,8 @@ public class CustomerPanel implements Menu {
 			log.info("=================================================");
 			String choice = Sc.sc.nextLine();
 			
-		
-			
 			switch (choice) {
+			
 			case "9":
 				isFlag = false;
 				break;
@@ -97,6 +93,7 @@ public class CustomerPanel implements Menu {
 
 	}
 
+	// USED TO DISPLAY CUSTOMER EACH ACCOUNT BALANCE
 	private void displayBalance(Customer customer2) {
 		
 		if(customer2.getAccount() == null) {

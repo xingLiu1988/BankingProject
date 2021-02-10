@@ -22,17 +22,18 @@ public class MainMenu implements Menu {
 			log.info("=       3). Create an Customer Account         =");
 			log.info("=       4). Exit                               =");
 			log.info("=     CHOOSE FROM <1-4>:                       =");
-			log.info("================================================"
-					+ "\n");
+			log.info("================================================\n");
 			
 			String choice = Sc.sc.nextLine();
 			
 			switch (choice) {
+			
 			case "1":
 				log.debug("customer entered 1");
 				Menu customerLoginView = new CustomerLoginView();
 				customerLoginView.display();
 				break;
+				
 			case "2":
 				log.debug("employee entered 2");
 				int result = getPassword();
@@ -43,36 +44,38 @@ public class MainMenu implements Menu {
 					employeeLoginView.display();
 				}
 				break;
+				
 			case "3":
 				log.debug("customer entered 3");
 				Menu createCustomerView = new CreateCustomerView();
 				createCustomerView.display();
 				break;
+				
 			case "4":
 				log.debug("customer entered 4 to exit");
 				isFlag = false;
 				break;
+				
 			default:
 				log.info("You entered wrong choice, plese enter again");
 			}
 		}
 
 	}
+	
+	// USED TO GET CUSTOMER USERNAME AND PASSWORD
 	private int getPassword() {
-		// Step 1: get username
+		
 		log.info("1. Please enter your username");
 		String username = Sc.sc.nextLine();
 
-		// Step 2: get password
 		log.info("\n2. Please enter your password");
 		String password = Sc.sc.nextLine();
 
-		// Step 3: validate username and password
+		// VALIDATE USERNAME AND PASSWORD
 		CustomerService customerService = new CustomerService();
 		int result = customerService.validatePassword(username, password);
 		 
-
-		// Step 4: if result = -1 not found, else return with login_id
 		return result;
 	}
 }

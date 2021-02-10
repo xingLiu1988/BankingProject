@@ -22,7 +22,7 @@ public class EmployeeService {
 		employeeDao = new EmployeeDaoImpl();
 	}
 
-	// view all customers account
+	// VIEW ALL CUSTOMER ACCOUNT
 	public void viewAllCustomersAccount() {
 
 		List<Customer> list = employeeDao.viewAllCustomersAccount();
@@ -59,7 +59,7 @@ public class EmployeeService {
 		}
 	}
 
-	// view customer account
+	// VIEW SINGLE CUSTOMER ACCOUNT BY CUSTOMER ID
 	public void viewSingleCustomerAccount() {
 		int customerID = 0;
 		boolean flag1 = false;
@@ -81,7 +81,8 @@ public class EmployeeService {
 		if (list.size() == 0) {
 			log.info("No Record");
 		} else {
-			log.info("--------------------------------------------------------------------------------------------------------------------------");
+			log.info(
+					"--------------------------------------------------------------------------------------------------------------------------");
 			log.info("Customer Name: " + list.get(0).getFirstName() + " " + list.get(0).getLastName());
 			for (int i = 0; i < list.size(); i++) {
 				if (list.get(i).getAccount() == null) {
@@ -103,11 +104,12 @@ public class EmployeeService {
 				}
 
 			}
-			log.info("--------------------------------------------------------------------------------------------------------------------------");
+			log.info(
+					"--------------------------------------------------------------------------------------------------------------------------");
 		}
 	}
 
-	// validate customer login username and password
+	// VALIDE CUSTOMER'S USERNAME AND PASSWORD
 	public int validatePassword() {
 		int result = -1;
 		CustomerDao customerDao = new CustomerDaoImpl();
@@ -115,7 +117,7 @@ public class EmployeeService {
 		return result;
 	}
 
-	// delete customer account number
+	// DELETE CUSTOMER ACCOUNT BY USING CUSTOEMR ACCOUNT NUMBER
 	public void deleteCustomerByAccountNumber() {
 		int accountNumber = 0;
 		boolean flag1 = false;
@@ -139,69 +141,51 @@ public class EmployeeService {
 		}
 	}
 
+	// VIEW ALL TRANSACTIONS OF CUSTOMERS
 	public void viewAllTransactions() {
 		List<Transaction> list = employeeDao.viewAllTransactions();
 		Iterator<Transaction> it = list.iterator();
 		log.info("TransactionID\tTransactionType\t\tTransactionAccount\tAmount\tDate");
-		while(it.hasNext()) {
-			Transaction s=it.next();
+		while (it.hasNext()) {
+			Transaction s = it.next();
 //			Transaction [transID=1, transType=deposit, transAccountType=checking, transAmount=100, transDate=2021-02-09 14:45:22]
-			log.info("\t" + s.getTransID() + "\t" + s.getTransType() + " \t\t" + s.getTransAccountType() + " \t\t" + s.getTransAmount() + "\t" + s.getTransDate());
+			log.info("\t" + s.getTransID() + "\t" + s.getTransType() + " \t\t" + s.getTransAccountType() + " \t\t"
+					+ s.getTransAmount() + "\t" + s.getTransDate());
 		}
 	}
 
+	// VIEW SINGLE TRANSACTION BY USING CUSTOMER ID
 	public void viewSingleTransactionById() {
 		int customerID = 0;
 		boolean flag1 = false;
 		do {
-		    flag1 = false;
-		    try {
-		        log.info("Please Enter Customer ID To Search");
-		        customerID = Integer.parseInt(Sc.sc.nextLine());
-		    } catch (NumberFormatException e) {
-		        log.info("incorrect number, please try again");
-		        flag1 = true;
-		    }
+			flag1 = false;
+			try {
+				log.info("Please Enter Customer ID To Search");
+				customerID = Integer.parseInt(Sc.sc.nextLine());
+			} catch (NumberFormatException e) {
+				log.info("incorrect number, please try again");
+				flag1 = true;
+			}
 		} while (flag1);
 //		[Transaction [transID=1, transType=deposit, transAccountType=checking, transAmount=100, transDate=2021-02-09 14:45:22], Transaction [transID=2, transType=deposit, transAccountType=saving, transAmount=155, transDate=2021-02-09 14:59:21], Transaction [transID=3, transType=deposit, transAccountType=toChecking, transAmount=1, transDate=2021-02-09 15:01:02], Transaction [transID=4, transType=withdraw, transAccountType=fromChecking, transAmount=22, transDate=2021-02-09 15:03:01], Transaction [transID=5, transType=withdraw, transAccountType=fromSaving, transAmount=66, transDate=2021-02-09 15:04:39], Transaction [transID=6, transType=withdraw, transAccountType=fromChecking, transAmount=20, transDate=2021-02-09 15:08:38], Transaction [transID=7, transType=transfer, transAccountType=toOtherAccount, transAmount=20, transDate=2021-02-09 15:08:38]]
 
 		boolean isExist = employeeDao.checkCustomerIdExist(customerID);
-		
-		if(isExist == true) {
+
+		if (isExist == true) {
 			List<Transaction> transaction = employeeDao.viewSingleTransactionById(customerID);
 			Iterator<Transaction> it = transaction.iterator();
 			log.info("-------------------------------------------------------------------------------------------");
 			log.info("Trans_ID\tTrans_Type\tTrans_Account_Type\tTrans_Amount\tTrans_Date");
-			while(it.hasNext()) {
+			while (it.hasNext()) {
 				Transaction t = it.next();
-				log.info("\t" +t.getTransID() + "\t " + t.getTransType() + " \t" + t.getTransAccountType() + " \t\t" + t.getTransAmount() + "\t\t" + t.getTransDate());
+				log.info("\t" + t.getTransID() + "\t " + t.getTransType() + " \t" + t.getTransAccountType() + " \t\t"
+						+ t.getTransAmount() + "\t\t" + t.getTransDate());
 			}
 			log.info("-------------------------------------------------------------------------------------------");
-		}else {
+		} else {
 			log.info("The ID You Enter is not found");
 		}
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

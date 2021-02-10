@@ -12,6 +12,7 @@ import com.revature.util.ConnectionUtil;
 public class TransactionDaoImpl implements TransactionDao {
 	private static Logger log = Logger.getLogger(TransactionDaoImpl.class);
 
+	// SEND TRANSACTION TO DATABASE
 	@Override
 	public boolean sendTransaction(int cusID, String transType, String transAccountType, int transAmount) {
 
@@ -31,8 +32,10 @@ public class TransactionDaoImpl implements TransactionDao {
 			if(result == 1) {
 				connection.setAutoCommit(true);
 				log.info("One Transaction Established");
+				log.debug("One Transaction Established");
 			}else {
 				log.info("Transaction Insert Failed");
+				log.debug("Transaction Insert Failed");
 			}
 		} catch (SQLException e) {
 			log.info("Insert Transaction Failed");

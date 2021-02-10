@@ -32,12 +32,12 @@ public class CreateCustomerView implements Menu{
 		String password = Sc.sc.nextLine();
 		log.debug("customer entered password name");
 		
-		//create login object
+		// CREATE AN CUSTOMER OBJECT
 		Login login = new Login(username, password);
-		//create customer object
 		Customer customer = new Customer(firstName, lastName, login);
 		log.debug("customer object created");
 		
+		// SENT CUSTOMER OBJECT TO CUSTOMER SERVICE
 		CustomerService customerService = new CustomerService();
 		customerService.createCustomer(customer);
 	}

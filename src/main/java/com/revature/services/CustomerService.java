@@ -1,10 +1,8 @@
 package com.revature.services;
 
-import java.lang.ProcessHandle.Info;
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-
 import org.apache.log4j.Logger;
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerDaoImpl;
@@ -20,7 +18,7 @@ public class CustomerService {
 		customerDao = new CustomerDaoImpl();
 	}
 
-	// 1 创建用户
+	// CREATE AN CUSTOMER
 	public void createCustomer(Customer cus) {
 		int count = customerDao.createCustomer(cus);
 		if (count == 0) {
@@ -30,7 +28,7 @@ public class CustomerService {
 		}
 	}
 
-	// 2 判断用户名和密码是否正确
+	// VALIDATE USERNAME AND PASSWORD
 	public int validatePassword(String username, String password) {
 
 		int result = customerDao.validatePassword(username, password);
@@ -38,7 +36,7 @@ public class CustomerService {
 		return result;
 	}
 
-	// 3 申请支票账户
+	// APPLY FOR CHECKING ACCOUNT
 	public boolean applyCheckingAccount(int id) {
 		// check if customer already have a checking account, if yes, will reject
 		int checkingID = customerDao.getCheckingIDByLoginID();
@@ -46,6 +44,20 @@ public class CustomerService {
 			log.info("You have checking account alrady");
 			return false;
 		}
+
+		// get initial deposit amout
+		boolean flag3 = false;
+		int depostAmount = 0;
+		do {
+			flag3 = false;
+			try {
+				log.info("Please Enter Initial Amount To Checking Account");
+				depostAmount = Integer.parseInt(Sc.sc.nextLine());
+			} catch (NumberFormatException e) {
+				log.info("incorrect number, please try again");
+				flag3 = true;
+			}
+		} while (flag3);
 
 		// randomly create an account number
 		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
@@ -60,7 +72,7 @@ public class CustomerService {
 		// only prove if over 18 years old
 		if (age >= 18) {
 			log.info("Age Over 18, Apply Checking Account Proved");
-			boolean result = customerDao.applyCheckingAccount(id, number, dob);
+			boolean result = customerDao.applyCheckingAccount(id, number, dob, depostAmount);
 			return result;
 		} else {
 			log.info("Age Less Than 18, Apply Checking Account Rejected");
@@ -69,7 +81,7 @@ public class CustomerService {
 
 	}
 
-	// 4 申请贮蓄账户
+	// APPLY FOR SAVING ACCOUNT
 	public boolean applySavingAccount(int id) {
 		// check if customer already have a checking account, if yes, will reject
 		int savingID = customerDao.getSavingIDByLoginID();
@@ -78,8 +90,22 @@ public class CustomerService {
 			return false;
 		}
 
+		// get initial deposit amout
+		boolean flag3 = false;
+		int depostAmount = 0;
+		do {
+			flag3 = false;
+			try {
+				log.info("Please Enter Initial Amount To Saving Account");
+				depostAmount = Integer.parseInt(Sc.sc.nextLine());
+			} catch (NumberFormatException e) {
+				log.info("incorrect number, please try again");
+				flag3 = true;
+			}
+		} while (flag3);
+
 		int number = (int) Math.floor(Math.random() * 88888888 + 11111110);
-		
+
 		// get date of birth
 		log.info("\nPlease enter your date of birth (MM/DD/YYYY)");
 		String dob = Sc.sc.nextLine();
@@ -90,7 +116,7 @@ public class CustomerService {
 		// only prove if over 18 years old
 		if (age >= 18) {
 			log.info("Age Over 18, Apply Checking Account Proved");
-			boolean result = customerDao.applySavingAccount(id, number, dob);
+			boolean result = customerDao.applySavingAccount(id, number, dob, depostAmount);
 			return result;
 		} else {
 			log.info("Age Less Than 18, Apply Checking Account Rejected");
@@ -98,13 +124,13 @@ public class CustomerService {
 		}
 	}
 
-	// 5 查看余额
+	// CHECK BALANCE
 	public Customer getBalance(int id) {
 		Customer cus = customerDao.getBalance(id);
 		return cus;
 	}
 
-	// 存钱到支票账户
+	// DEPOSIT MONEY TO CHECKING ACCOUNT
 	public boolean depositToChecking() {
 		if (CustomerLoginView.checkingID == 0) {
 			log.info("You don't have a checking account, please apply first");
@@ -125,6 +151,7 @@ public class CustomerService {
 		}
 	}
 
+	// DEPOSIT MONEY TO SAVING ACCOUNT
 	public boolean depositToSaving() {
 		if (CustomerLoginView.savingID == 0) {
 			log.info("You don't have a saving account, please apply first");
@@ -145,6 +172,7 @@ public class CustomerService {
 		}
 	}
 
+	// WITHDRAW MONEY FROM CHECKING ACCOUNT
 	public void withdrawFromChecking() {
 
 		log.info("How much you want to withdraw from your checking account?");
@@ -162,16 +190,19 @@ public class CustomerService {
 
 	}
 
+	// USING LOGIN ID TO GET CHECKING ACCOUNT NUMBER
 	public int getCheckingIDByLoginID() {
 		int checkingID = customerDao.getCheckingIDByLoginID();
 		return checkingID;
 	}
 
+	// USING LOGIN ID TO GET SAVING ACCOUNT NUMBER
 	public int getSavingIDByLoginID() {
 		int savingID = customerDao.getSavingIDByLoginID();
 		return savingID;
 	}
 
+	// WITHDRAW MONEY FROM SAVING ACCOUNT
 	public void withdrawFromSaving() {
 		log.info("How much you want to withdraw from your saving account?");
 		int amount = Integer.parseInt(Sc.sc.nextLine());
@@ -188,6 +219,7 @@ public class CustomerService {
 
 	}
 
+	// TRANSFER MONEY
 	public boolean transfer() {
 		int customerIDYouWantToTransfer = 0; // store account number customer want to transfer
 		String transferType = ""; // store account type customer want to transfer
@@ -305,6 +337,7 @@ public class CustomerService {
 		return false;
 	}
 
+	// USING LOGIN ID TO GET CUSTOMER ID
 	public int getCusIdByLoginId() {
 		int cusId = customerDao.getCusIdByLoginId();
 		return cusId;

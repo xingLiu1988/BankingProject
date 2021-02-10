@@ -17,6 +17,7 @@ import com.revature.util.ConnectionUtil;
 public class EmployeeDaoImpl implements EmployeeDao {
 	private static Logger log = Logger.getLogger(EmployeeDaoImpl.class);
 
+	// GET A LIST OF CUSTOMER
 	@Override
 	public List<Customer> viewAllCustomersAccount() {
 		List<Customer> list = new ArrayList<>();
@@ -25,15 +26,15 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		String type = "";
 
 		try (Connection connection = ConnectionUtil.getConnection()) {
-
 			String sql = "SELECT * FROM  banking.customer LEFT JOIN banking.account ON customer.account_id_checking = account.account_id OR customer.account_id_saving = account.account_id";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet = preparedStatement.executeQuery();
+
 			while (resultSet.next()) {
 				customer = new Customer();
 				account = new Account();
 				type = resultSet.getString("account_type");
-				// see what type of account is
+
 				if (type != null) {
 					if (type.equals("checking")) {
 						account.setAccountNumberChecking(resultSet.getInt("account_number"));
@@ -64,6 +65,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return list;
 	}
 
+	// GET A SINGLE CUSTOMER
 	@Override
 	public List<Customer> viewSingleCustomerAccount(int customerID) {
 		List<Customer> list = new ArrayList<>();
@@ -112,15 +114,15 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return list;
 	}
 
-	// 删除指定用户
+	// DELETE SINGLE CUSTOMER BY USING THEIR ACCOUNT NUMBER
 	@Override
 	public int deleteCustomerByAccountNumber(int accountNumber) {
 		int result = 0;
 		int accountID = 0;
 		String accountType = "";
 		try (Connection connection = ConnectionUtil.getConnection()) {
-
-			// 1. 获取当前账户的account_id
+			connection.setAutoCommit(false);
+			// 1. get account_id
 			String sql = "SELECT account_id, account_type FROM banking.account WHERE account_number = ?";
 			PreparedStatement p = connection.prepareStatement(sql);
 			p.setInt(1, accountNumber);
@@ -133,7 +135,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				return result;
 			}
 
-			// 2. 更新checking id
+			// 2. update checking id
 			if (accountType.equals("checking")) {
 				String sql2 = "UPDATE banking.customer SET account_id_checking = NULL WHERE account_id_checking = ?";
 				PreparedStatement p2 = connection.prepareStatement(sql2);
@@ -146,11 +148,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				p3.executeUpdate();
 			}
 
-			// 3. 删除account
+			// 3. delete account
 			String sql4 = "DELETE FROM banking.account WHERE account_id = ?";
 			PreparedStatement p4 = connection.prepareStatement(sql4);
 			p4.setInt(1, accountID);
 			int p4Result = p4.executeUpdate();
+			connection.setAutoCommit(true);
 			return p4Result;
 		} catch (SQLException e) {
 			log.info("Delete Account Number Failed");
@@ -159,15 +162,16 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return result;
 	}
 
+	// GET A LIST OF TRANSACTION
 	@Override
 	public List<Transaction> viewAllTransactions() {
 		List<Transaction> list = new ArrayList<>();
-		
-		try(Connection connection = ConnectionUtil.getConnection()) {
+
+		try (Connection connection = ConnectionUtil.getConnection()) {
 			String sql = "SELECT * FROM banking.transaction";
 			PreparedStatement p = connection.prepareStatement(sql);
 			ResultSet r = p.executeQuery();
-			while(r.next()) {
+			while (r.next()) {
 				Transaction t = new Transaction();
 				t.setTransID(r.getInt("trans_id"));
 				t.setTransType(r.getString("trans_type"));
@@ -179,41 +183,42 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		return list;
 	}
 
-	
+	// CHECK IF THE CUSTOMER ID IS EXIST
 	@Override
 	public boolean checkCustomerIdExist(int customerID) {
 		boolean isExist = false;
-		
-		try(Connection connection = ConnectionUtil.getConnection()) {
+
+		try (Connection connection = ConnectionUtil.getConnection()) {
 			String sql = "SELECT * From banking.customer WHERE customer_id = ?";
 			PreparedStatement p = connection.prepareStatement(sql);
 			p.setInt(1, customerID);
 			ResultSet r = p.executeQuery();
-			while(r.next()) {
+			while (r.next()) {
+				log.debug("get data from database success");
 				return true;
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			log.debug("connection error");
 		}
-		
+
 		return isExist;
 	}
 
-	
+	// GET SINGLE TRANSACTION BY USING CUSTOMER ID
 	@Override
 	public List<Transaction> viewSingleTransactionById(int customerID) {
 		List<Transaction> list = new ArrayList<>();
-		
-		try(Connection connection = ConnectionUtil.getConnection()) {
+
+		try (Connection connection = ConnectionUtil.getConnection()) {
 			String sql = "SELECT * From banking.transaction WHERE customer_id = ?";
 			PreparedStatement p = connection.prepareStatement(sql);
 			p.setInt(1, customerID);
 			ResultSet r = p.executeQuery();
-			while(r.next()) {
+			while (r.next()) {
 				Transaction t = new Transaction();
 				t.setTransID(r.getInt("trans_id"));
 				t.setTransType(r.getString("trans_type"));
@@ -221,11 +226,12 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				t.setTransAmount(r.getInt("trans_amount"));
 				t.setTransDate(r.getString("trans_Date").substring(0, 19));
 				list.add(t);
+				log.debug("get customer success");
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			log.debug("connection error");
 		}
-		
+
 		return list;
 	}
 

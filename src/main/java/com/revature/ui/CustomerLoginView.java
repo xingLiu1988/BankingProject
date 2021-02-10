@@ -36,13 +36,12 @@ public class CustomerLoginView implements Menu {
 				if (result == -1) {
 					log.info("Login Failed, Please Try Again");
 				} else {
-					// after log in, we set checking saving and login id to variables
+					// AFTER CUSTOMER LOGGED IN, WE WILL STORE cusID, checkingID, savingID TO STATIC VARIABLES FOR FUTURE
 					id = result;
 					log.info("\nYou have successfully logged into the system");
 					cusID = getCusID();
 					checkingID = getCheckingIDByLoginID();
 					savingID = getSavingIDByLoginID();
-					
 					customerPanel.display();
 				}
 				break;
@@ -57,39 +56,40 @@ public class CustomerLoginView implements Menu {
 
 	}
 
+	// USED TO GET CUSTOMER ID
 	private int getCusID() {
 		CustomerService customerService = new CustomerService();
 		int cusID = customerService.getCusIdByLoginId();
-		
 		return cusID;
 	}
 
+	// USED TO GET CUSTOMER SAVING ACCOUNT NUMBER
 	private int getSavingIDByLoginID() {
 		CustomerService customerService = new CustomerService();
 		int savingID = customerService.getSavingIDByLoginID();
 		return savingID;
 	}
 
+	// USED TO GET CUSTOMER CHECKING ACCOUNT NUMBER
 	private int getCheckingIDByLoginID() {
 		CustomerService customerService = new CustomerService();
 		int checkingID = customerService.getCheckingIDByLoginID();
 		return checkingID;
 	}
 
+	// USED TO GET USERNAME AND PASSWORD FROM CUSTOMER
 	private int getPassword() {
-		// Step 1: get username
+		
 		log.info("1. Please enter your username");
 		String username = Sc.sc.nextLine();
 
-		// Step 2: get password
 		log.info("\n2. Please enter your password");
 		String password = Sc.sc.nextLine();
 
-		// Step 3: validate username and password
+		// VALIDATE CUSTOMER USERNAME AND PASSWORD
 		CustomerService customerService = new CustomerService();
 		int result = customerService.validatePassword(username, password);
 
-		// Step 4: if result = -1 not found, else return with login_id
 		return result;
 	}
 
