@@ -3,6 +3,7 @@ package com.revature.dao;
 import java.util.List;
 
 import com.revature.models.Customer;
+import com.revature.models.Transaction;
 
 public interface EmployeeDao {
 
@@ -14,6 +15,8 @@ public interface EmployeeDao {
 	
 	//3. employee can delete single customer
 	public int deleteCustomerByAccountNumber(int accountNumber);
+
+	public List<Transaction> viewAllTransactions();
 	
 	//4. employee can view single customer log
 	

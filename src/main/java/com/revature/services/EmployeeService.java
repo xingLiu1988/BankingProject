@@ -1,6 +1,7 @@
 package com.revature.services;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -10,6 +11,7 @@ import com.revature.dao.CustomerDaoImpl;
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.EmployeeDaoImpl;
 import com.revature.models.Customer;
+import com.revature.models.Transaction;
 import com.revature.util.Sc;
 
 public class EmployeeService {
@@ -140,4 +142,37 @@ public class EmployeeService {
 		}
 	}
 
+	public void viewAllTransactions() {
+		List<Transaction> list = employeeDao.viewAllTransactions();
+		Iterator<Transaction> it = list.iterator();
+		log.info("TransactionID\tTransactionType\t\tTransactionAccount\tAmount\tDate");
+		while(it.hasNext()) {
+			Transaction s=it.next();
+//			Transaction [transID=1, transType=deposit, transAccountType=checking, transAmount=100, transDate=2021-02-09 14:45:22]
+			log.info("\t" + s.getTransID() + "\t" + s.getTransType() + " \t\t" + s.getTransAccountType() + " \t\t" + s.getTransAmount() + "\t" + s.getTransDate());
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
