@@ -17,6 +17,10 @@ public interface EmployeeDao {
 	public int deleteCustomerByAccountNumber(int accountNumber);
 
 	public List<Transaction> viewAllTransactions();
+
+	public boolean checkCustomerIdExist(int customerID);
+
+	public List<Transaction> viewSingleTransactionById(int customerID);
 	
 	//4. employee can view single customer log
 	

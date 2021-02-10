@@ -183,4 +183,50 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return list;
 	}
 
+	
+	@Override
+	public boolean checkCustomerIdExist(int customerID) {
+		boolean isExist = false;
+		
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			String sql = "SELECT * From banking.customer WHERE customer_id = ?";
+			PreparedStatement p = connection.prepareStatement(sql);
+			p.setInt(1, customerID);
+			ResultSet r = p.executeQuery();
+			while(r.next()) {
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return isExist;
+	}
+
+	
+	@Override
+	public List<Transaction> viewSingleTransactionById(int customerID) {
+		List<Transaction> list = new ArrayList<>();
+		
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			String sql = "SELECT * From banking.transaction WHERE customer_id = ?";
+			PreparedStatement p = connection.prepareStatement(sql);
+			p.setInt(1, customerID);
+			ResultSet r = p.executeQuery();
+			while(r.next()) {
+				Transaction t = new Transaction();
+				t.setTransID(r.getInt("trans_id"));
+				t.setTransType(r.getString("trans_type"));
+				t.setTransAccountType(r.getString("trans_account_type"));
+				t.setTransAmount(r.getInt("trans_amount"));
+				t.setTransDate(r.getString("trans_Date").substring(0, 19));
+				list.add(t);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+
 }

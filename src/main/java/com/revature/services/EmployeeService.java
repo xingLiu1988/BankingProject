@@ -81,18 +81,16 @@ public class EmployeeService {
 		if (list.size() == 0) {
 			log.info("No Record");
 		} else {
-			log.info(
-					"----------------------------------------------------------------------------------------------------------------");
+			log.info("--------------------------------------------------------------------------------------------------------------------------");
+			log.info("Customer Name: " + list.get(0).getFirstName() + " " + list.get(0).getLastName());
 			for (int i = 0; i < list.size(); i++) {
-				log.info("\nCustomer Name: " + list.get(i).getFirstName() + " " + list.get(i).getLastName());
-
 				if (list.get(i).getAccount() == null) {
 					log.info(list.get(i).getCustomerID() + "\t\t" + list.get(i).getFirstName() + "\t\t"
 							+ list.get(i).getLastName() + "\t\tNo Banking Account ");
 				} else {
 					// If customer have checking account and display
 					if (list.get(i).getAccount().getAccountNumberChecking() != 0) {
-						log.info("\nChecking Account Number: " + list.get(i).getAccount().getAccountNumberChecking()
+						log.info("Checking Account Number: " + list.get(i).getAccount().getAccountNumberChecking()
 								+ "\tChecking Balance: " + list.get(i).getAccount().getBalanceChecking()
 								+ "\t\tCreated Date: " + list.get(i).getAccount().getDateChecking());
 					}
@@ -105,8 +103,7 @@ public class EmployeeService {
 				}
 
 			}
-			log.info(
-					"\n----------------------------------------------------------------------------------------------------------------");
+			log.info("--------------------------------------------------------------------------------------------------------------------------");
 		}
 	}
 
@@ -150,6 +147,38 @@ public class EmployeeService {
 			Transaction s=it.next();
 //			Transaction [transID=1, transType=deposit, transAccountType=checking, transAmount=100, transDate=2021-02-09 14:45:22]
 			log.info("\t" + s.getTransID() + "\t" + s.getTransType() + " \t\t" + s.getTransAccountType() + " \t\t" + s.getTransAmount() + "\t" + s.getTransDate());
+		}
+	}
+
+	public void viewSingleTransactionById() {
+		int customerID = 0;
+		boolean flag1 = false;
+		do {
+		    flag1 = false;
+		    try {
+		        log.info("Please Enter Customer ID To Search");
+		        customerID = Integer.parseInt(Sc.sc.nextLine());
+		    } catch (NumberFormatException e) {
+		        log.info("incorrect number, please try again");
+		        flag1 = true;
+		    }
+		} while (flag1);
+//		[Transaction [transID=1, transType=deposit, transAccountType=checking, transAmount=100, transDate=2021-02-09 14:45:22], Transaction [transID=2, transType=deposit, transAccountType=saving, transAmount=155, transDate=2021-02-09 14:59:21], Transaction [transID=3, transType=deposit, transAccountType=toChecking, transAmount=1, transDate=2021-02-09 15:01:02], Transaction [transID=4, transType=withdraw, transAccountType=fromChecking, transAmount=22, transDate=2021-02-09 15:03:01], Transaction [transID=5, transType=withdraw, transAccountType=fromSaving, transAmount=66, transDate=2021-02-09 15:04:39], Transaction [transID=6, transType=withdraw, transAccountType=fromChecking, transAmount=20, transDate=2021-02-09 15:08:38], Transaction [transID=7, transType=transfer, transAccountType=toOtherAccount, transAmount=20, transDate=2021-02-09 15:08:38]]
+
+		boolean isExist = employeeDao.checkCustomerIdExist(customerID);
+		
+		if(isExist == true) {
+			List<Transaction> transaction = employeeDao.viewSingleTransactionById(customerID);
+			Iterator<Transaction> it = transaction.iterator();
+			log.info("-------------------------------------------------------------------------------------------");
+			log.info("Trans_ID\tTrans_Type\tTrans_Account_Type\tTrans_Amount\tTrans_Date");
+			while(it.hasNext()) {
+				Transaction t = it.next();
+				log.info("\t" +t.getTransID() + "\t " + t.getTransType() + " \t" + t.getTransAccountType() + " \t\t" + t.getTransAmount() + "\t\t" + t.getTransDate());
+			}
+			log.info("-------------------------------------------------------------------------------------------");
+		}else {
+			log.info("The ID You Enter is not found");
 		}
 	}
 

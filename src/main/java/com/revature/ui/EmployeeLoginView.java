@@ -50,7 +50,7 @@ public class EmployeeLoginView implements Menu {
 				break;
 			case "5":
 				log.debug("employee entered 5");
-				
+				employeeService.viewSingleTransactionById();
 				break;
 			case "6":
 				log.debug("customer entered 6 to exit");
