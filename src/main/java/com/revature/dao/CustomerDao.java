@@ -18,4 +18,5 @@ public interface CustomerDao {
 	public boolean checkAccountExist(int customerIDYouWantToTransfer);
 	public void depositToAccount(int amount, int customerIDYouWantToTransfer);
 	public void withdrawFromSaving(int amount, int balance);
+	public int getCusIdByLoginId();
 }

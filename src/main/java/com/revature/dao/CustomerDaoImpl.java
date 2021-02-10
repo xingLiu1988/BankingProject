@@ -10,6 +10,7 @@ import com.revature.models.Account;
 import com.revature.models.Customer;
 import com.revature.ui.CustomerLoginView;
 import com.revature.util.ConnectionUtil;
+import com.revature.util.TransactionUtil;
 
 public class CustomerDaoImpl implements CustomerDao {
 
@@ -18,7 +19,8 @@ public class CustomerDaoImpl implements CustomerDao {
 	public int createCustomer(Customer cus) {
 		int count = 0;
 		try (Connection connection = ConnectionUtil.getConnection()) {
-
+			connection.setAutoCommit(false);
+			
 			// Step 1: insert username password into login table
 			String sql = "INSERT INTO banking.login(username, password) VALUES(?, ?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -45,6 +47,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement3.executeUpdate();
 
 			// Step 4: we are finished creating a customer
+			connection.setAutoCommit(true);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return -1;
@@ -79,6 +82,8 @@ public class CustomerDaoImpl implements CustomerDao {
 	public boolean applyCheckingAccount(int id, int number, String dob) {
 		int accountID = 0;
 		try (Connection connection = ConnectionUtil.getConnection()) {
+			connection.setAutoCommit(false);
+			
 			// 1. 插入数据到account table
 			String sql = "INSERT INTO banking.account(account_number, account_type, balance) VALUES(?, ?, ?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -104,13 +109,13 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement3.setString(2, dob);
 			preparedStatement3.setInt(3, id);
 			preparedStatement3.executeUpdate();
+			
+			connection.setAutoCommit(true);
 			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
-		// 3. 找到log in id为id的用户，并更新account id
-
+		
 		return false;
 	}
 
@@ -118,6 +123,8 @@ public class CustomerDaoImpl implements CustomerDao {
 	public boolean applySavingAccount(int id, int number, String dob) {
 		int accountID = 0;
 		try (Connection connection = ConnectionUtil.getConnection()) {
+			connection.setAutoCommit(false);
+			
 			// 1. 插入数据到account table
 			String sql = "INSERT INTO banking.account(account_number, account_type, balance) VALUES(?, ?, ?)";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -143,12 +150,12 @@ public class CustomerDaoImpl implements CustomerDao {
 			preparedStatement3.setString(2, dob);
 			preparedStatement3.setInt(3, id);
 			preparedStatement3.executeUpdate();
+			
+			connection.setAutoCommit(true);
 			return true;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
-		// 3. 找到log in id为id的用户，并更新account id
 
 		return false;
 	}
@@ -236,6 +243,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			if(a == 1) {
 				log.info("Successful deposit amount " + amountInt + " dollars in to your checking account");
 				log.info("Your checking acount balance now: " + balance + " dollars");
+				TransactionUtil.send(CustomerLoginView.cusID, "deposit", "toChecking", amountInt);
 			}
 		} catch (SQLException e) {
 			log.info("Transaction failed");
@@ -282,6 +290,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			if(a == 1) {
 				log.info("Successful deposit amount " + amountInt + " dollars in to your saving account");
 				log.info("Your saving acount balance now: " + balance + " dollars");
+				TransactionUtil.send(CustomerLoginView.cusID, "deposit", "toSaving", amountInt);
 			}
 		} catch (SQLException e) {
 			log.info("Transaction failed");
@@ -339,6 +348,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			if (success == 1) {
 				log.info("Successfully withdraw " + amount + " from your checking account");
 				log.info("Your checking account balance => " + result + " dollars");
+				TransactionUtil.send(CustomerLoginView.cusID, "withdraw", "fromChecking", amount);
 			} else {
 				log.info("Transaction failed");
 			}
@@ -424,6 +434,7 @@ public class CustomerDaoImpl implements CustomerDao {
 					log.info("Transfer to account " + customerIDYouWantToTransfer + " successfully.");
 					log.info("Transfer amount: " + amount);
 					log.info("--------------------------------------------------");
+					TransactionUtil.send(CustomerLoginView.cusID, "transfer", "toOtherAccount", amount);
 				}else {
 					log.info("Transaction Failed");
 				}
@@ -448,6 +459,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			if (success == 1) {
 				log.info("Successfully withdraw " + amount + " from your saving account");
 				log.info("Your saving account balance " + result);
+				TransactionUtil.send(CustomerLoginView.cusID, "withdraw", "fromSaving", amount);
 			} else {
 				log.info("Transaction failed");
 			}
@@ -455,6 +467,26 @@ public class CustomerDaoImpl implements CustomerDao {
 			e.printStackTrace();
 		}
 		
+	}
+
+	@Override
+	public int getCusIdByLoginId() {
+		int cusId = 0;
+		
+		try(Connection connection = ConnectionUtil.getConnection()) {
+			String sql = "SELECT customer_id FROM banking.customer WHERE login_id = ?";
+			PreparedStatement p = connection.prepareStatement(sql);
+			p.setInt(1, CustomerLoginView.id);
+			ResultSet r = p.executeQuery();
+			if(r.next()) {
+				cusId = r.getInt("customer_id");
+				System.out.println("customer id is " + cusId);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return cusId;
 	}
 
 	

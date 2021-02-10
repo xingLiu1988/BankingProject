@@ -3,7 +3,6 @@ package com.revature.ui;
 import org.apache.log4j.Logger;
 
 import com.revature.services.CustomerService;
-import com.revature.services.EmployeeService;
 import com.revature.util.Sc;
 
 public class MainMenu implements Menu {

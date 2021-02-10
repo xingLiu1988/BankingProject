@@ -305,4 +305,9 @@ public class CustomerService {
 		return false;
 	}
 
+	public int getCusIdByLoginId() {
+		int cusId = customerDao.getCusIdByLoginId();
+		return cusId;
+	}
+
 }

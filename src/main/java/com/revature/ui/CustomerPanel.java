@@ -1,5 +1,9 @@
 package com.revature.ui;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.apache.log4j.Logger;
 
 import com.revature.models.Customer;
@@ -102,11 +106,12 @@ public class CustomerPanel implements Menu {
 			log.info("\nCustomer Name: " + customer2.getFirstName() + " " + customer2.getLastName());
 			//If customer have checking account and display
 			if(customer2.getAccount().getAccountNumberChecking() != 0) {
-				log.info("\nChecking Account Number: " + customer2.getAccount().getAccountNumberChecking() + "\tChecking Balance: " + customer2.getAccount().getBalanceChecking() + "\t\tCreated Date: " + customer2.getAccount().getDateChecking());
+				
+				log.info("\nChecking Account Number: " + customer2.getAccount().getAccountNumberChecking() + "\tChecking Balance: " + customer2.getAccount().getBalanceChecking() + "\t\tCreated Date: " + customer2.getAccount().getDateChecking().substring(0, 19));
 			}
 			//If customer have saving account and display
 			if(customer2.getAccount().getAccountNumberSaving() != 0) {
-				log.info("Saving  Account  Number: " + customer2.getAccount().getAccountNumberSaving()+ "\tSaving   Balance: " + customer2.getAccount().getBalanceSaving() + "\t\tCreated Date: " + customer2.getAccount().getDateSaving());
+				log.info("Saving  Account  Number: " + customer2.getAccount().getAccountNumberSaving()+ "\tSaving   Balance: " + customer2.getAccount().getBalanceSaving() + "\t\tCreated Date: " + customer2.getAccount().getDateSaving().substring(0, 19));
 			}
 			log.info("\n----------------------------------------------------------------------------------------------------------------");
 		}

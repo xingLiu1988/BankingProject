@@ -4,10 +4,10 @@ import org.apache.log4j.Logger;
 
 import com.revature.services.CustomerService;
 import com.revature.util.Sc;
-import com.sun.org.apache.xerces.internal.impl.dv.dtd.IDDatatypeValidator;
 
 public class CustomerLoginView implements Menu {
 	public static int id;// used to save login_id
+	public static int cusID;// used to save customer_id
 	public static int checkingID;// used to save checking_id
 	public static int savingID;// used to save saving_id
 	private static Logger log = Logger.getLogger(CustomerLoginView.class);
@@ -39,7 +39,7 @@ public class CustomerLoginView implements Menu {
 					// after log in, we set checking saving and login id to variables
 					id = result;
 					log.info("\nYou have successfully logged into the system");
-
+					cusID = getCusID();
 					checkingID = getCheckingIDByLoginID();
 					savingID = getSavingIDByLoginID();
 					
@@ -55,6 +55,13 @@ public class CustomerLoginView implements Menu {
 			}
 		}
 
+	}
+
+	private int getCusID() {
+		CustomerService customerService = new CustomerService();
+		int cusID = customerService.getCusIdByLoginId();
+		
+		return cusID;
 	}
 
 	private int getSavingIDByLoginID() {
