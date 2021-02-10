@@ -1,4 +1,5 @@
 Functions Completed
+
     1.	Customer can register for customer account
 
     2.	Customer can log in 
