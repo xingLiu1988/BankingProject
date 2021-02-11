@@ -74,7 +74,7 @@ class EmployeeDaoImplTest {
 	@Test
 	public void testGetBalance() {
 		CustomerService c = new CustomerService();
-		Customer customer = c.getBalance(2);
+		Customer customer = c.getBalance(1);
 		System.out.println(customer);
 	}
 	

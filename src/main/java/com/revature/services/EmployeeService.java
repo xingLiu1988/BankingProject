@@ -14,7 +14,7 @@ import com.revature.models.Customer;
 import com.revature.models.Transaction;
 import com.revature.util.Sc;
 
-public class EmployeeService {
+public class EmployeeService implements Employee{
 	private static Logger log = Logger.getLogger(EmployeeService.class);
 	EmployeeDao employeeDao;
 

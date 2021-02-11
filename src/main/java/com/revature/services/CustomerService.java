@@ -10,7 +10,7 @@ import com.revature.models.Customer;
 import com.revature.ui.CustomerLoginView;
 import com.revature.util.Sc;
 
-public class CustomerService {
+public class CustomerService implements com.revature.services.Customer{
 	private static Logger log = Logger.getLogger(CustomerService.class);
 	public CustomerDao customerDao;
 
@@ -71,7 +71,7 @@ public class CustomerService {
 
 		// only prove if over 18 years old
 		if (age >= 18) {
-			log.info("Age Over 18, Apply Checking Account Proved");
+			log.info("Age Over 18, Apply Checking Account Approved");
 			boolean result = customerDao.applyCheckingAccount(id, number, dob, depostAmount);
 			return result;
 		} else {
@@ -115,11 +115,11 @@ public class CustomerService {
 
 		// only prove if over 18 years old
 		if (age >= 18) {
-			log.info("Age Over 18, Apply Checking Account Proved");
+			log.info("Age Over 18, Apply Saving Account Approved");
 			boolean result = customerDao.applySavingAccount(id, number, dob, depostAmount);
 			return result;
 		} else {
-			log.info("Age Less Than 18, Apply Checking Account Rejected");
+			log.info("Age Less Than 18, Apply Saving Account Rejected");
 			return false;
 		}
 	}
@@ -211,7 +211,7 @@ public class CustomerService {
 		} else {
 			int balance = customerDao.getSavingBalanceByAccountId();
 			if (amount > balance) {
-				log.info("So sorry guys, you don't have enough money inside you chekcing accout, please try later");
+				log.info("So sorry guys, you don't have enough money inside you saving accout, please try later");
 			} else {
 				customerDao.withdrawFromSaving(amount, balance);
 			}
@@ -265,7 +265,7 @@ public class CustomerService {
 					// if customer enter less than or equal 0 amount, and they need to enter again
 					if (amount <= 0) {
 						log.info("Transfer Amount Can't Be 0 Or Less Than 0");
-						flag4 = false;
+						flag4 = true;
 					}
 				} catch (NumberFormatException e) {
 					log.info("you entered incorrect amount, please try again");
@@ -342,5 +342,7 @@ public class CustomerService {
 		int cusId = customerDao.getCusIdByLoginId();
 		return cusId;
 	}
+
+
 
 }
